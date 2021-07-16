@@ -11,3 +11,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: FAQ3 Activities to improve English
+  steps:
+    - intent: ask_how_to_improve_english
+    - action: utter_ways_to_improve_english
