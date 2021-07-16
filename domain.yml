@@ -12,6 +12,7 @@ intents:
 - mood_unhappy
 - bot_challenge
 - ask_how_much_practice
+
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -27,9 +28,13 @@ responses:
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_how_long_until_fluent:
-  - text: It depends on which languages you already know and how much you practice.
+  - text: It depends. Do you want to get a rough estimate for your case?
   utter_how_much_practice:
   - text: One hour per day is great. But you need to find something that's realistic for you.
+  utter_todo:
+  - text: TODO
+
 actions:
 - utter_greet
 - utter_how_long_until_fluent
+

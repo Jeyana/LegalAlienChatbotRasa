@@ -37,6 +37,11 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - sure
+    - ok
+    - of course
+    - you bet
+    - I did
 - intent: deny
   examples: |
     - no
@@ -46,6 +51,25 @@ nlu:
     - don't like that
     - no way
     - not really
+    - I didn't
+    - nope
+- intent: out_of_scope
+  examples: |
+    - that's not what I want to do
+    - wait stop
+    - you are no help
+    - this is no help at all
+    - how old are you
+    - I want to order a pizza
+    - tell me the weather
+    - this isn't working
+    - I don't want to tell you that
+    - none of your business
+    - that's not right
+    - stop asking
+    - nevermind
+    - I changed my mind
+    - I want to do something else
 - intent: mood_great
   examples: |
     - perfect
@@ -99,3 +123,4 @@ nlu:
     - how many hours should i study?
     - how often should i practice?
     - is five minutes of practice enough?
+

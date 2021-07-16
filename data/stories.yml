@@ -39,9 +39,9 @@ stories:
     - intent: ask_how_much_practice
     - action: utter_how_much_practice
 
-- story: interactive_story_1
+- story: estimate_time_until_fluency_happy_path
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: ask_how_long_until_fluent
-  - action: utter_how_long_until_fluent
+    - intent: ask_how_long_until_fluent
+    - action: utter_how_long_until_fluent
+    - intent: affirm
+    - action: utter_todo
