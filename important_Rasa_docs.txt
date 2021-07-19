@@ -7,3 +7,17 @@ All the Response names should start with "utter_"! https://rasa.com/docs/rasa/re
 Entities: https://rasa.com/docs/rasa/training-data-format#entities
 
 Forms: https://rasa.com/docs/rasa/forms
+
+Setup for telegram ("Use Telegram as Chat platform, steps 1-4"): https://github.com/RasaHQ/medicare_locator#-use-telegram-as-chat-platform
+
+Hide API token with Heroku environment variable: https://stackoverflow.com/questions/55776767/how-to-hide-bot-telegram-token-with-gitignore
+
+Webhooks:
+https://docs.github.com/en/developers/webhooks-and-events/webhooks/about-webhooks
+https://docs.github.com/en/developers/webhooks-and-events/webhooks/creating-webhooks
+
+How to create webhook with ngrok:
+1. Run ngrok.exe
+2. cd to a folder where ngrok.exe is
+3. run "ngrok.exe http 5005"
+4. edit webhook in credentials.yml
