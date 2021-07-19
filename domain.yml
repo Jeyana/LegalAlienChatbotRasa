@@ -27,13 +27,9 @@ intents:
 
 responses:
   utter_chitchat/ask_name:
-  - image: "https://i.imgur.com/zTvA58i.jpeg"
-    text: Hello, my name is Retrieval Bot.
-  - text: I am called Retrieval Bot!
+  - text: My name is Legal Alien, but you can call me L :)
   utter_chitchat/ask_weather:
-  - text: Oh, it does look sunny right now in Berlin.
-    image: "https://i.imgur.com/vwv7aHN.png"
-  - text: I am not sure of the whole week but I can see the sun is out today.
+  - text: Where I am, it's dark, quiet, dry and quite warm. Unfortunately, I don't know how it is where you are.
   utter_faq:
   - text: TODO
   utter_is_one_hour_five_days_realistic:

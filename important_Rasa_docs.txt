@@ -1,0 +1,9 @@
+Policies (RulePolicy, MemoizationPolicy, TEDPolicy etc.): https://rasa.com/docs/rasa/policies/
+
+How to group all chitchat and FAQ questions: https://rasa.com/docs/rasa/chitchat-faqs
+
+All the Response names should start with "utter_"! https://rasa.com/docs/rasa/responses
+
+Entities: https://rasa.com/docs/rasa/training-data-format#entities
+
+Forms: https://rasa.com/docs/rasa/forms

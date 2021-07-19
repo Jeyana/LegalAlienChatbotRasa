@@ -46,7 +46,6 @@ nlu:
     - this is no help at all
     - how old are you
     - I want to order a pizza
-    - tell me the weather
     - this isn't working
     - I don't want to tell you that
     - none of your business
@@ -102,47 +101,6 @@ nlu:
 #    - see you around
 #    - bye bye
 #    - see you later
-#- intent: affirm
-#  examples: |
-#    - yes
-#    - y
-#    - indeed
-#    - of course
-#    - that sounds good
-#    - correct
-#    - sure
-#    - ok
-#    - of course
-#    - you bet
-#    - I did
-#- intent: deny
-#  examples: |
-#    - no
-#    - n
-#    - never
-#    - I don't think so
-#    - don't like that
-#    - no way
-#    - not really
-#    - I didn't
-#    - nope
-#- intent: out_of_scope
-#  examples: |
-#    - that's not what I want to do
-#    - wait stop
-#    - you are no help
-#    - this is no help at all
-#    - how old are you
-#    - I want to order a pizza
-#    - tell me the weather
-#    - this isn't working
-#    - I don't want to tell you that
-#    - none of your business
-#    - that's not right
-#    - stop asking
-#    - nevermind
-#    - I changed my mind
-#    - I want to do something else
 #- intent: mood_great
 #  examples: |
 #    - perfect
