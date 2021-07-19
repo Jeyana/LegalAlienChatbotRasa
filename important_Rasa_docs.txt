@@ -21,3 +21,6 @@ How to create webhook with ngrok:
 2. cd to a folder where ngrok.exe is
 3. run "ngrok.exe http 5005"
 4. edit webhook in credentials.yml: https://rasa.com/docs/rasa/connectors/telegram/
+
+Deploy Rasa to Heroku with Docker (maybe not a great idea with free tier):
+https://medium.com/analytics-vidhya/deploying-rasa-chatbot-on-heroku-using-docker-7199bf16c219
