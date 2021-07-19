@@ -10,18 +10,19 @@ rules:
   - intent: chitchat
   - action: utter_chitchat
 
-#delete?
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
+#WORKS, BUT NEEDS REVIEW
 
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
-
-- rule: FAQ3 Activities to improve English
-  steps:
-    - intent: ask_how_to_improve_english
-    - action: utter_ways_to_improve_english
+#- rule: Say goodbye anytime the user says goodbye
+#  steps:
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- rule: Say 'I am a bot' anytime the user challenges
+#  steps:
+#  - intent: bot_challenge
+#  - action: utter_iamabot
+#
+#- rule: FAQ3 Activities to improve English
+#  steps:
+#    - intent: ask_how_to_improve_english
+#    - action: utter_ways_to_improve_english

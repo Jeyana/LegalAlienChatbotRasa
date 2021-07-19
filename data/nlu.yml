@@ -14,135 +14,136 @@ nlu:
     - I like sunny days in Berlin.
 
 
-#delete?
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-    - hola
-- intent: goodbye
-  examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-    - sure
-    - ok
-    - of course
-    - you bet
-    - I did
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-    - I didn't
-    - nope
-- intent: out_of_scope
-  examples: |
-    - that's not what I want to do
-    - wait stop
-    - you are no help
-    - this is no help at all
-    - how old are you
-    - I want to order a pizza
-    - tell me the weather
-    - this isn't working
-    - I don't want to tell you that
-    - none of your business
-    - that's not right
-    - stop asking
-    - nevermind
-    - I changed my mind
-    - I want to do something else
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-- intent: ask_how_long_until_fluent
-  examples: |
-    - how long does it take to learn a language?
-    - when will i be fluent?
-    - when will i speak fluently?
-    - when will i speak English well?
-    - how long until i stop making mistakes?
-    - when i fluent
-- intent: ask_how_much_practice
-  examples: |
-    - how much should i practice?
-    - for how long should i study?
-    - how many hours should i study?
-    - how often should i practice?
-    - is five minutes of practice enough?
-- intent: ask_how_to_improve_english
-  examples: |
-    - What daily activities can improve my language level?
-    - What can I do to improve my language level?
-    - Tips on language level improvement?
-    - Can you give me a piece of advice on how to improve my language level?
-    - how do I improve my English?
-    - how to learn to speak English better?
+#WORKS, BUT NEEDS REVIEW
+
+#- intent: greet
+#  examples: |
+#    - hey
+#    - hello
+#    - hi
+#    - hello there
+#    - good morning
+#    - good evening
+#    - moin
+#    - hey there
+#    - let's go
+#    - hey dude
+#    - goodmorning
+#    - goodevening
+#    - good afternoon
+#    - hola
+#- intent: goodbye
+#  examples: |
+#    - good afternoon
+#    - cu
+#    - good by
+#    - cee you later
+#    - good night
+#    - bye
+#    - goodbye
+#    - have a nice day
+#    - see you around
+#    - bye bye
+#    - see you later
+#- intent: affirm
+#  examples: |
+#    - yes
+#    - y
+#    - indeed
+#    - of course
+#    - that sounds good
+#    - correct
+#    - sure
+#    - ok
+#    - of course
+#    - you bet
+#    - I did
+#- intent: deny
+#  examples: |
+#    - no
+#    - n
+#    - never
+#    - I don't think so
+#    - don't like that
+#    - no way
+#    - not really
+#    - I didn't
+#    - nope
+#- intent: out_of_scope
+#  examples: |
+#    - that's not what I want to do
+#    - wait stop
+#    - you are no help
+#    - this is no help at all
+#    - how old are you
+#    - I want to order a pizza
+#    - tell me the weather
+#    - this isn't working
+#    - I don't want to tell you that
+#    - none of your business
+#    - that's not right
+#    - stop asking
+#    - nevermind
+#    - I changed my mind
+#    - I want to do something else
+#- intent: mood_great
+#  examples: |
+#    - perfect
+#    - great
+#    - amazing
+#    - feeling like a king
+#    - wonderful
+#    - I am feeling very good
+#    - I am great
+#    - I am amazing
+#    - I am going to save the world
+#    - super stoked
+#    - extremely good
+#    - so so perfect
+#    - so good
+#    - so perfect
+#- intent: mood_unhappy
+#  examples: |
+#    - my day was horrible
+#    - I am sad
+#    - I don't feel very well
+#    - I am disappointed
+#    - super sad
+#    - I'm so sad
+#    - sad
+#    - very sad
+#    - unhappy
+#    - not good
+#    - not very good
+#    - extremly sad
+#    - so saad
+#    - so sad
+#- intent: bot_challenge
+#  examples: |
+#    - are you a bot?
+#    - are you a human?
+#    - am I talking to a bot?
+#    - am I talking to a human?
+#- intent: ask_how_long_until_fluent
+#  examples: |
+#    - how long does it take to learn a language?
+#    - when will i be fluent?
+#    - when will i speak fluently?
+#    - when will i speak English well?
+#    - how long until i stop making mistakes?
+#    - when i fluent
+#- intent: ask_how_much_practice
+#  examples: |
+#    - how much should i practice?
+#    - for how long should i study?
+#    - how many hours should i study?
+#    - how often should i practice?
+#    - is five minutes of practice enough?
+#- intent: ask_how_to_improve_english
+#  examples: |
+#    - What daily activities can improve my language level?
+#    - What can I do to improve my language level?
+#    - Tips on language level improvement?
+#    - Can you give me a piece of advice on how to improve my language level?
+#    - how do I improve my English?
+#    - how to learn to speak English better?
