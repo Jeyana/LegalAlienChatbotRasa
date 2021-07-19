@@ -20,4 +20,4 @@ How to create webhook with ngrok:
 1. Run ngrok.exe
 2. cd to a folder where ngrok.exe is
 3. run "ngrok.exe http 5005"
-4. edit webhook in credentials.yml
+4. edit webhook in credentials.yml: https://rasa.com/docs/rasa/connectors/telegram/
