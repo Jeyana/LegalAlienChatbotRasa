@@ -37,7 +37,3 @@ responses:
   utter_ways_to_improve_english:
   - text: You can listen to songs you like and learn them; watch movies with subtitles; take MOOCs you find interesting; read blogs, articles and books; write a diary in English; find new friends among native speakers and practice with them. What other fun ways can you think of?
 
-actions:
-- utter_greet
-- utter_how_long_until_fluent
-
