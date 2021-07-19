@@ -5,6 +5,13 @@ session_config:
 intents:
 - chitchat
 - faq
+#GENERAL
+- affirm
+- deny
+- out_of_scope
+#FAQ2
+- ask_how_much_practice
+- describe_study_plan
 
 # # REVIEW
 #- greet
@@ -29,6 +36,16 @@ responses:
   - text: I am not sure of the whole week but I can see the sun is out today.
   utter_faq:
   - text: TODO
+  utter_is_one_hour_five_days_realistic:
+    - text: Is it realistic for you to practice five days a week, for one hour each day? Everything counts, including listening to songs and watching movies!
+  utter_awesome_have_fun:
+    - text: Awesome! Have fun learning English!
+  utter_what_is_realistic_plan:
+    - text: How many days per week can you practice? How many minutes per day? I'm curious what's your plan.
+  utter_good_plan:
+    - text: Nice plan! Be patient, stick to what you've decided, and you'll reach fluency!
+  utter_ok_ask_me_anything:
+    - text: Ok, looks like you don't want to answer. You can still ask me anything :)
 
   # #REVIEW
 #  utter_greet:

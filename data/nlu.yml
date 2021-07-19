@@ -13,6 +13,63 @@ nlu:
     - Oh, do you mind checking the weather for me please?
     - I like sunny days in Berlin.
 
+# GENERAL
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - ok
+    - of course
+    - you bet
+    - I did
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - I didn't
+    - nope
+- intent: out_of_scope
+  examples: |
+    - that's not what I want to do
+    - wait stop
+    - you are no help
+    - this is no help at all
+    - how old are you
+    - I want to order a pizza
+    - tell me the weather
+    - this isn't working
+    - I don't want to tell you that
+    - none of your business
+    - that's not right
+    - stop asking
+    - nevermind
+    - I changed my mind
+    - I want to do something else
+
+# FAQ2
+- intent: ask_how_much_practice
+  examples: |
+    - how much should i practice?
+    - for how long should i study?
+    - how many hours should i study?
+    - how often should i practice?
+    - is five minutes of practice enough?
+- intent: describe_study_plan
+  examples: |
+    - two days per week, 30 minutes per day
+    - once a week, fifteen minutes
+    - three days, one hour
+    - two days, 2 hours
 
 #WORKS, BUT NEEDS REVIEW
 
