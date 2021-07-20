@@ -8,7 +8,9 @@ Entities: https://rasa.com/docs/rasa/training-data-format#entities
 
 Forms: https://rasa.com/docs/rasa/forms
 
-Setup for telegram ("Use Telegram as Chat platform, steps 1-4"): https://github.com/RasaHQ/medicare_locator#-use-telegram-as-chat-platform
+Setup for telegram ("Use Telegram as Chat platform, steps 1-4"):
+https://github.com/RasaHQ/medicare_locator#-use-telegram-as-chat-platform
+https://rasa.com/docs/rasa/connectors/telegram/
 
 Hide API token with Heroku environment variable: https://stackoverflow.com/questions/55776767/how-to-hide-bot-telegram-token-with-gitignore
 
@@ -25,8 +27,12 @@ How to create webhook with ngrok:
 Deploy Rasa to Heroku with Docker (maybe not a great idea with free tier):
 https://medium.com/analytics-vidhya/deploying-rasa-chatbot-on-heroku-using-docker-7199bf16c219
 
+Rasa deployment instructions: https://rasa.com/docs/rasa/how-to-deploy/
 
 Entities and slots definitions in domain.yml: https://rasa.com/docs/rasa/domain/
 Important:
 1. Name the entity and the slot the same to make it easier.
 2. Entities in nlu.yml: you don't need quotation marks in short form, Eg. Call me [Joe](name)
+
+Using variables in responses: "blah blah {variable} blah blah"
+https://rasa.com/docs/rasa/responses/
