@@ -1,0 +1,57 @@
+LegalAlienChatbot Privacy Statement & Cookies
+
+LegalAlienChatbot is an AI-powered chatbot that uses your input to serve relevant replies.
+It requires your initial input to be stored on our servers and used for our future development.
+
+It is operated and developed by “Talking Heads” from “Tech Labs Amsterdam” Data Science & ML project.
+
+The basis for your personal data processing by LegalAlienChatbot is an agreement between you and us which is concluded when you access the service.
+
+LegalAlienChatbot will process generic data that is willfully entered in the system under the GDPR basis of Genuine Interest. In case personal data is entered this can be stored in our analytics logs, chat history and other locations for technical and compliancy reasons. You are responsible any information you disclose.
+In case certain functionality requires personal data, this will be disclosed at the time of request. If you as a user enable this functionality by entering the required personal data, then we require this information to be present.
+
+We are not tracking individual users unless explicit permission is given during the process.
+
+Any conversations with the chatbot are the result of AI interaction with our technology and therefore are copyrighted by us. This data is owned by LegalAlienChatbot. These conversations are stored without connections to IP-addresses, or other technical metadata and are ‘anonymously’ stored on secure servers in XX. However we can rebuild the origin of the content in case of any malignant activity or in case they contain information that is part of a request for deletion.
+
+Any data that you enter whilst talking to the chatbot is stored and analyzed to improve the chatbot’s functionality.
+During the use of the chatbot you will be asked for permission if and when any of the following circumstances are relevant to the situation:
+•	Tracking/advertising cookies.
+•	Permission to send marketing emails or newsletters.
+•	Sharing personal data with other companies for commercial purposes.
+
+
+A summary of data that we process:
+– Any data that you enter into the system.
+– First Name / Last Name
+– E-mail address
+– IP-address
+
+Who has access to your information?
+
+We’ll only share your information within our own company.
+All service providers that have access to your information will only use this information for the supplied service.
+ These parties can’t use your information for other purposes.
+Where will your information be stored?
+We save your information in several databases, and we always use strict safety measures. Your information is almost always saved within the European Union. On the rare occasion that customer information is passed on to countries outside of the European Union, we’ll ensure that your privacy remains protected in the best way possible.
+How long do we store your information?
+LegalAlienChatbot will not keep your personal data longer than the completion of the intent of the data.  Data based on legitimate interest will be stored as long as the legitimate interest basis can be established.
+When we’ve asked for permission the data will be used for the agreed upon time period.
+In the case of e-mail list subscriptions we will store the subscription until permission is revoked.
+What are your rights?
+You have the right to view, delete or amend the personal data that we store. Additionally, you have the right to revoke any permission given for the processing of your data or to object against the processing of data by LegalAlienChatbot.
+The right to be forgotten can be executed by sending a deletion request to <emailaddress> with subject line: Deletion Request. After confirming your identity and identifying the contents of the request we will proceed accordingly to GDPR regulation to delete your information except when there remains a legitimate reason or obligation to do so.
+
+To verify the identity of the requestee, provide a document for identification along with the request.
+Make sure to remove or black-out your photo, machine readable zone, passport number and BSN number manually or use the “Kopie-ID” app from the Dutch Government or any alternative.
+This ensures your privacy. The resulting file will only be stored for the duration of the process.
+
+We will address your request within 4 weeks.
+In some cases we can ask for additional information to determine your identity. We also do this when a request is unclear or considered to be unreasonable. In certain cases administrative fees may apply, this is the case when requesting an unreasonable amount of times or multiple copies.
+
+Terms of Service
+
+LegalAlienChatbot is a free service which does not guarantee results, accessibility, or any other form of dependency on the chatbot. LegalAlienChatbot is not responsible for any damage caused by your operation of this chatbot. The user is responsible for his own entries and is not shielded against prosecution, legal action in case of malignant behavior.
+Use of the chatbot is at your own risk.
+
+In case LegalAlienChatbot activities will cease you cannot claim any compensation for lost data, or any other reason.

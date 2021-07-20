@@ -1,0 +1,5 @@
+1. LegalAlienChatbot is an AI chatbot powered by Rasa Open Source. It is developed and operated by team TalkingHeads (Jeyana Morozenko, Nazli Dolu, Violetta Shishkina). It started in May 2021 as a study project for TechLabs Amsterdam.
+2. We are not storing any of your data anywhere, and, naturally, we can not share it with any third parties.
+3. We are doing our best to ensure that all the bot's messages are respectful, friendly and helpful, but do not guarantee that you'll be 100% happy with them. But then the same goes for humans ;)
+
+Have fun!
