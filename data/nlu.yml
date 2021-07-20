@@ -6,6 +6,13 @@ nlu:
     - May I know your name?
     - What do people call you?
     - Do you have a name for yourself?
+- intent: chitchat/say_name
+  examples: |
+    - My name is [Bob](name)
+    - You can call me [Lindsey](name)
+    - I am [Erik](name)
+    - I'm [Ursula](name)
+    - Call me [Joe](name)
 - intent: chitchat/ask_weather
   examples: |
     - What's the weather like today?

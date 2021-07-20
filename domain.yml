@@ -2,6 +2,9 @@ version: '2.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+config:
+  store_entities_as_slots: true
+
 intents:
 - chitchat
 - faq
@@ -25,9 +28,20 @@ intents:
 #- ask_how_much_practice
 #- ask_how_to_improve_english
 
+entities:
+  - name
+
+slots:
+  name:
+    type: text
+    influence_conversation: true
+    auto_fill: true
+
 responses:
   utter_chitchat/ask_name:
   - text: My name is Legal Alien, but you can call me L :)
+  utter_chitchat/say_name:
+    - text: Nice to meet you, {name}!
   utter_chitchat/ask_weather:
   - text: Where I am, it's dark, quiet, dry and quite warm. Unfortunately, I don't know how it is where you are.
   utter_faq:
@@ -66,3 +80,5 @@ responses:
 #  utter_ways_to_improve_english:
 #  - text: You can listen to songs you like and learn them; watch movies with subtitles; take MOOCs you find interesting; read blogs, articles and books; write a diary in English; find new friends among native speakers and practice with them. What other fun ways can you think of?
 #
+
+
