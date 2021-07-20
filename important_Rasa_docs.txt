@@ -24,3 +24,9 @@ How to create webhook with ngrok:
 
 Deploy Rasa to Heroku with Docker (maybe not a great idea with free tier):
 https://medium.com/analytics-vidhya/deploying-rasa-chatbot-on-heroku-using-docker-7199bf16c219
+
+
+Entities and slots definitions in domain.yml: https://rasa.com/docs/rasa/domain/
+Important:
+1. Name the entity and the slot the same to make it easier.
+2. Entities in nlu.yml: you don't need quotation marks in short form, Eg. Call me [Joe](name)
