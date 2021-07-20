@@ -60,7 +60,7 @@ These are other examples of intents we have generated. These are used more than 
 
 These intents, however, are only used for specific stories, in this case FAQ2.
 
-![](images/nlu-intent-1a.png)
+![](images/nlu-intent-example.png)
 
 Also, Rasa entities and slots allow us to extract specific information from user messages. In nlu.yml, we specify how to extract entities. Check out the following example, the entity in this case is called "name".
 
@@ -115,7 +115,6 @@ Our github repo can be found in the following link: https://github.com/Jeyana/Le
 -And it is entirely written in Python! (also integrated with Python 3.8)
 
 -Training data is written in markdown files which is also easy for programmers to read and write.
-
 
 **Disadvantages of Rasa**
 
