@@ -36,3 +36,9 @@ Important:
 
 Using variables in responses: "blah blah {variable} blah blah"
 https://rasa.com/docs/rasa/responses/
+
+Actions are run in a separate server! If there's anything in python.py:
+1. Open the first terminal (Anaconda Powershell Prompt), cd to the project folder
+3. conda activate ENVIRONMENT_NAME
+4. rasa run actions
+5. Open the second terminal, do "rasa run" or "rasa shell"
