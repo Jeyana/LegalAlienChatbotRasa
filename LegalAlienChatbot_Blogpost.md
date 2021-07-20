@@ -60,7 +60,7 @@ These are other examples of intents we have generated. These are used more than 
 
 These intents, however, are only used for specific stories, in this case FAQ2.
 
-![](images/nlu-intent-example.png)
+![](images/nlu-intent-1a.png)
 
 Also, Rasa entities and slots allow us to extract specific information from user messages. In nlu.yml, we specify how to extract entities. Check out the following example, the entity in this case is called "name".
 
