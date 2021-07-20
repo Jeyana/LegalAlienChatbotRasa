@@ -1,12 +1,28 @@
 version: "2.0"
 nlu:
+- intent: chitchat/greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hola
 - intent: chitchat/ask_name
   examples: |
     - What is your name?
     - May I know your name?
     - What do people call you?
     - Do you have a name for yourself?
-- intent: chitchat/say_name
+- intent: chitchat/say_name #TODO: add MANY names
   examples: |
     - My name is [Bob](name)
     - You can call me [Lindsey](name)

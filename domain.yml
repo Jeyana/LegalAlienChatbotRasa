@@ -38,6 +38,8 @@ slots:
     auto_fill: true
 
 responses:
+  utter_chitchat/greet:
+    - text: Hi! I'm an AI chatbot. You can practise English with me. I know a lot about language learning. Ask me anything!
   utter_chitchat/ask_name:
   - text: My name is Legal Alien, but you can call me L :)
   utter_chitchat/say_name:
