@@ -8,21 +8,29 @@ Mentor: Matthijs Rijm
 
 **Abstract**
 
-With our project, we aim to build a chatbot to help people overcome foreign language anxiety. This is mainly the feeling of unease, worry, nervousness and apprehension experienced in learning or using a foreign language. We believe that before directly talking with a person, some written exercise with a human-like chatbot could ease the foreign language anxiety and increase the pace of language learning. For this purpose, we used a natural language understanding model. We created a chatbot using Rasa, an open source conversational AI platform.
+With our project, we aim to build a chatbot to help people overcome foreign language anxiety, which is a big part of a language barrier. This is mainly the feeling of unease, worry, nervousness and apprehension experienced in learning or using a foreign language. We believe that before directly talking with a person, some written exercise with a human-like chatbot could ease the foreign language anxiety and increase the pace of language learning. For this purpose, we used a natural language understanding model. We created a chatbot using Rasa, an open source conversational AI platform.
 
 **Introduction**
 
 Research has shown that foreign language anxiety is an important issue in language learning throughout the world especially in terms of its strong relationship to the skill of speaking in a foreign or second language. This may have a significant effect on peoples' confidence and self-esteem causing individuals to be quieter and less willing to communicate.
 
+Language barrier is a broad term for this kind of a roadblock and it hinders communication tremendously. An example would be a learner of English communicating with a native speaker and being afraid of it. There are several underlying reasons, some of them are linked to experience (or language proficiency) and others are purely psychological. The fear of not being understood, the fear of misunderstanding the interlocutor, the “shame” of the non-native accent can be a huge barrier on the way to speaking a foreign language and enjoying it. If on top of that, we have a person who is an introvert, or has low self-esteem, this barrier can become an impenetrable wall that might just make the person give up the idea of speaking a new language.  
+
 One piece of advice that people with foreign language anxiety are given is to imagine how the discussion will likely go and think about what you want to say. Great! Prepare the required phrases and play out the scenario as if you were actually using them. Then we thought, why not do this with the help of technology?
 
-Our goal was to build a chatbot that is fun to talk to. We believed that if the chatbot can imitate a person, users can improve themselves in personal communication until they feel confident enough to talk to a real person. To achieve this, we worked with Rasa which is an open source machine learning framework for automated text and voice-based conversations. It understands user messages and constructs conversations.
+Our goal was to build a chatbot that is fun to talk to. We thought that if the chatbot could imitate a person, users could improve themselves in personal communication until they felt confident enough to talk to a real person. To achieve this, we worked with Rasa which is an open source machine learning framework for automated text and voice-based conversations. It understands user messages and constructs conversations.
+
+So, if you are a learner of English as a foreign language, who knows basic grammar and has enough vocabulary to build simple sentences, desperately needs practice but does not feel confident to communicate with other English speakers, reach out to us and check the chatbot out! 
+
+Our chatbot is a talking buddy that is always there for you. LegalAlienChatbot is to help you transition from theory to practice in a fun way and on your own schedule. Learning should not be boring, otherwise it brings no long-term results. The fear of using the language can easily make any learner lose their motivation and give up. 
+
+Remember, you are not alone on this journey of learning something new! 
 
 **Method**
 
-In order to create a chatbot before the development of machine learning algorithms, one had to write a hard coded rule based program. This would require the programmer to think of every possible way that a user might say something so that it can map the correct response of the chatbot. There are two downsides of this method. One of them is the fact that it is not possible to think of every possible sentence a user might write. Another one is, even though we assume that the programmer “somehow” finds out the way of enumerating all the sentences, the user might make a typo and the algorithm won’t be able to understand this. To avoid these downsides and actually come up with what we expect our chatbot to do, we examined natural language programming (NLP) models. 
+In order to create a chatbot before the development of machine learning algorithms, one had to write a hard coded rule based program. This would require the programmer to think of every possible way that a user might say something so that it could map the correct response of the chatbot. There are two downsides of this method. One of them is the fact that it is not possible to think of every possible sentence a user might write. Another one is, even though we assume that the programmer “somehow” finds out the way of enumerating all the sentences, the user might make a typo and the algorithm won’t be able to understand this. To avoid these downsides and actually come up with what we expect our chatbot to do, we examined natural language programming (NLP) models. 
 
-NLP is a subfield of artificial intelligence (AI) which concerns how to program computers to process large amounts of natural language data. However, the chatbot needs to understand what the user is saying and it also requires to decide what to say in response. Hence, it should also understand the context of data (what the user is saying). To achieve this, natural language understanding (NLU) takes the stage. NLU is a subfield of NLP. While NLP ensures the transformation of large amounts of unstructured natural language texts into structured data, NLU focuses on deriving insights from this structured data. The use of NLU allows chatbots to comprehend the context.
+NLP is a subfield of artificial intelligence (AI) which deals with methods of programming computers to process large amounts of natural language data. However, the chatbot needs to understand what the user is saying and it also is also required to decide what to say in response. Hence, it should also understand the context of data (what the user means when they are saying something). To achieve this, natural language understanding (NLU) takes the center stage. NLU is a subfield of NLP. While NLP ensures the transformation of large amounts of unstructured natural language texts into structured data, NLU focuses on deriving insights from this structured data. The use of NLU allows chatbots to comprehend the context.
 
 To utilize an NLU model, we used Rasa which is an open source machine learning framework for automated text.
 
@@ -50,7 +58,7 @@ These are other examples of intents we have generated. These are used more than 
 
 ![](images/general-intent-example.png)
 
-While these intents are only used for specific stories.
+These intents, however, are only used for specific stories, in this case FAQ2.
 
 ![](images/nlu-intent-example.png)
 
@@ -78,13 +86,13 @@ Hence, if a user asks a question about how to improve English, our chatbot will 
 
 We also need to train the dialogue management model. For this, the model requires rule or story data which are the combinations of both the intent behind what the user says and the chatbot response. This training is mainly to teach the model what to say/do depending on what the user said so far.
 
-Then we come up with stories for chatbot to construct dialogue like conversations by using TED Policy. The stories are created in stories.md file. An example of how to create stories is as follows.
+Then we come up with stories for the chatbot to construct dialogue like conversations by using TED Policy. The stories are created in stories.md file. An example of how to create stories is as follows.
 
 ![](images/stories-FAQ2.png)
 
-Different paths are defined for a conversation which starts by the user asking how much practice she should have. In all of the stories, at first the chatbot responds by asking whether one hour for five days would be realistic for the user (using the action: utter_is_one_hour_five_days_realistic). However the response of the user to this action may differ in real life and stories tried to capture these various patterns. In the first story, the user chooses to go with what the chatbot suggests and hence the chatbot encourages the user in responses. In the second story, apparently what the chatbot suggests is too much for the user, and so it asks for an alternative plan. In the third story, the user says something irrelevant, and the chatbot is not insisting on answering the practice plan question but rather suggesting to talk about something else.
+Different paths are defined for a conversation which starts by the user asking how much practice she should have. In all of the stories, at first the chatbot responds by asking whether one hour in five days would be realistic for the user (using the action: utter_is_one_hour_five_days_realistic). However the response of the user to this action may differ in real life, and stories tried to capture these various patterns. In the first story, the user chooses to go with what the chatbot suggests and hence the chatbot encourages the user in responses. In the second story, apparently what the chatbot suggests is too much for the user, and so it asks for an alternative plan. In the third story, the user says something irrelevant, and the chatbot is not insisting on answering the practice plan question but rather suggesting to talk about something else.
 
-For all these input data for the training model, we used Grammarly to correct our English for the chatbot’s responses since none of us is a native English speaker.
+For all these input data for the training model, we used Grammarly to correct our English for the chatbot’s responses as none of us is a native English speaker.
 
 In the end we had the following conversation with our chatbot:
 
@@ -98,7 +106,7 @@ Our github repo can be found in the following link: https://github.com/Jeyana/Le
 
 -The computational time of training is faster than simple benchmark chatbots.
 
--Eventhough user makes a typo while writing a question, the model is able to understand the intent of the user.
+-Even though the user makes a typo while writing a question, the model is able to understand the intent of the user.
 
 -Having two separate models (NLU and Dialogue Management Model) is beneficial for practical purposes. For instance, if you make a change in one of these models, you only need to retrain the model you make a change to, this saves time and computation power.
 
@@ -107,6 +115,7 @@ Our github repo can be found in the following link: https://github.com/Jeyana/Le
 -And it is entirely written in Python! (also integrated with Python 3.8)
 
 -Training data is written in markdown files which is also easy for programmers to read and write.
+
 
 **Disadvantages of Rasa**
 
@@ -117,4 +126,11 @@ Our github repo can be found in the following link: https://github.com/Jeyana/Le
 **Conclusion**
 
 Rasa might be one of the best FREE conversational AI platforms out there, and we had a lot of fun creating this project together. Still, we wouldn't recommend Rasa for teams with more than one programmer, or for large and complex chatbots.
+
+With this project we also wanted to show that AI is an awesome tool that can help people acquire news skills. We even asked a GPT3-based AI what it thought about a bot that teaches English. Here’s the response:
+
+“The idea is not to replace human teachers, but to provide some extra help to those who need it”. 
+
+And we absolutely agree. 
+
 
