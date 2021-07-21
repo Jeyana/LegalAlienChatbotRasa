@@ -4,7 +4,7 @@ Techies: Jeyana Morozenko, Violetta Shishkina, Nazlı Dolu
 
 Mentor: Matthijs Rijm
 
-![](images/telegram.png)
+![](images/telegram_new.jpg)
 
 **Abstract**
 
