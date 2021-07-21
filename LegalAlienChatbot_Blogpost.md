@@ -6,7 +6,7 @@
 
 ![](images/telegram_new.jpg)
 
-The first three sections of this blog post explain the motivation for creating **LegalAlienChatbot** and provide some Machine Learning background. [Our Experience with Rasa Open Source](Our Experience with Rasa Open Source) section is an informally written deep dive into our journey and the technical aspects of building a chatbot on a popular free platform.
+The first three sections of this blog post explain the motivation for creating **LegalAlienChatbot** and provide some Machine Learning background. [Our Experience with Rasa Open Source](##our-experience-with-rasa-open-source) section is an informally written deep dive into our journey and the technical aspects of building a chatbot on a popular free platform.
 
 ## Abstract
 
@@ -14,7 +14,7 @@ With our project, we aim to build a chatbot to help people overcome foreign lang
 
 Unlike Grammarly, LegalAlien does not correct user's messages, but it is pretty good at understanding bad English. It can answer questions about language learning, help you develop a study plan, or simply chitchat with you. LegalAlien is available 24/7, it is never annoyed by the mistakes you make, and you can never accidentally offend it.
 
-##Introduction
+## Introduction
 
 It is quite natural for people to be afraid of starting to speak a foreign language, even if they already understand a lot. This may have a significant effect on their confidence and self-esteem causing individuals to be quieter and less willing to communicate.
 
@@ -30,7 +30,7 @@ Our chatbot is a language buddy that is always there for you. It can help you tr
 
 Remember, you are not alone on this journey of learning something new! 
 
-##Method
+## Method
 
 In order to create a chatbot before the development of machine learning algorithms, one had to write a rule based program, where all the user messages and bot responses are hardcoded. This would require the programmer to think of every possible way that a user might say something so that it could map the correct response of the chatbot. There are two downsides of this method. One of them is the fact that it is not possible to think of every possible sentence a user might write. Another one is, even though we assume that the programmer “somehow” finds out the way of enumerating all the sentences, the user might make a typo and the algorithm won’t be able to understand this. To avoid these downsides and actually achieve what we expect our chatbot to do, we examined natural language programming (NLP) models. 
 
@@ -50,7 +50,7 @@ The Rasa process works as follows:
 
 Rasa is able to utilize different machine learning policies to decide which action to take. The ones we implemented are Rule Policy, The Transformer Embedding Dialogue (TED) Policy and Memoization Policy. Rule Policy is used for relatively simple cases in which the model needs to classify only one message of the user. On the other hand, TED and Memoization Policies are utilized for more complex cases. The parameters of these policies can be adjusted manually through the config.yml file. For example, we experimented with the number of epochs for DIETClassifier and ResponseSelector.
 
-##Our Experience with Rasa Open Source
+## Our Experience with Rasa Open Source
 **Training the NLU Model**
 
 NLU training data is formed of intents which are basically the categorization of the possible user messages, and entities. Intents consist of training examples that represent all of the different ways a user might express the intent. Here is an example of an intent and training examples. 
@@ -128,7 +128,7 @@ Our github repo can be found in the following link: https://github.com/Jeyana/Le
 - The documentation is incomplete, the "Rasa for Beginners" course on Udemy is outdated. A lot of "figuring out" must happen before you get anything to work.
 - Machine Learning happens only when Rasa recognizes user messages and predicts bot actions. The actual bot messages are hardcoded, not generated (although they can contain variables extracted from user messages or generated with Python code).
 
-##Conclusion
+## Conclusion
 
 Rasa might be one of the best **free** conversational AI platforms out there, and we had a lot of fun creating this project together. Still, we wouldn't recommend Rasa for teams with more than one programmer, or for large and complex chatbots.
 
