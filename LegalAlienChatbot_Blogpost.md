@@ -8,6 +8,8 @@
 
 The first three sections of this blog post explain the motivation for creating **LegalAlienChatbot** and provide some Machine Learning background. [Our Experience with Rasa Open Source](#our-experience-with-rasa-open-source) section is an informally written deep dive into our journey and the technical aspects of building a chatbot on a popular free platform.
 
+**Important**: The Rasa version we are using is 2.7.1, the Python version is 3.8
+
 ## Abstract
 
 With our project, we aim to build a chatbot to help people overcome foreign language anxiety, which is a big part of a language barrier. This is mainly the feeling of unease, worry, nervousness and apprehension experienced in learning or using a foreign language. We believe that before directly talking with a person, some written exercise with a human-like chatbot could ease the foreign language anxiety and increase the pace of language learning. For this purpose, we used a natural language understanding model. We created a chatbot using Rasa, an open source conversational AI platform.
@@ -52,68 +54,254 @@ Rasa is able to utilize different machine learning policies to decide which acti
 
 ## Our Experience with Rasa Open Source
 
+Soon after the project phase started, we realized that we don't have nearly enough time to build an impressive AI chatbot from scratch. We started to look for open-source solutions we can build upon. The first attempt was with the **HuggingFace** bot, described in [this blog post](https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313). That's where we got the idea of bot personality. The app itself turned out to be unimpressive, but at least it was funny.
 
+![](images/hugging_face_not_impressive.png)
 
+After searching some more, we decided to focus on **Rasa Open Source**. It looked very promising, like the gentle waves of the Black Sea. You realize that's it's full of poisonous jellyfish only when you're already neck-deep, but more on that later. 
 
+### First success: language learning FAQ question recognized and answered correctly. Rasa Rules
 
+After you're done with [Rasa installation](https://rasa.com/docs/rasa/installation/) (remember to choose a compatible Python version when setting up the environment!), you can run "rasa init". This creates a hello-world project with the necessary file structure. Then the official documentation is your best bet because the instructional videos and most of the stackoverflow threads about Rasa are outdated. The syntax for YAML files has changed drastically. 
 
-**Training the NLU Model**
+This is the first conversation about language learning we managed to have with LegalAlien:
 
-NLU training data is formed of intents which are basically the categorization of the possible user messages, and entities. Intents consist of training examples that represent all of the different ways a user might express the intent. Here is an example of an intent and training examples. 
+![](images/how_improve_eng_conv.jpg)
 
-![](images/ask-how-to-improve-eng.png)
+In order to make this kind of thing possible, one has to edit three different YAML files. Great opportunity to make a typo somewhere, not get any error, and spend hours trying to figure out what went wrong!
 
-Here, the intent category “ask_how_to_improve_english” is generated to define possible different ways of how a user might ask “How to improve my English?”. All of the possible example questions are mainly the training examples. One significant advantage of Rasa is that since the policies we use are pretrained, we do not need to provide hundreds of example questions but five of them is sufficient for the training of the NLU model. Intents are defined in the nlu.md file.
+First, **rules.yml**
 
-These are other examples of intents we have generated. These are used more than once in the algorithms.
+This is where you write a simple script of what the bot is supposed to do. "Intent" is what the user is trying to say, "action" is what the bot does when it recognizes a particular intent.
 
-![](images/general-intent-example.png)
+~~~
+rules:
+- rule: FAQ3 Activities to improve English
+  steps:
+    - intent: ask_how_to_improve_english
+    - action: utter_ways_to_improve_english
+~~~
 
-These intents, however, are only used for specific stories, in this case FAQ2.
+Then, **nlu.yml** 
 
-![](images/nlu-intent-example.png)
+You need to write some training examples for this particular user intent. What are some possible ways in which the users might express their intention? Write the ones you think are the most probable. Five examples are already a good start, because Rasa NLU models are pretrained.
 
-Also, Rasa entities and slots allow us to extract specific information from user messages. In nlu.yml, we specify how to extract entities. Check out the following example, the entity in this case is called "name".
+~~~
+nlu:
+- intent: ask_how_to_improve_english
+  examples: |
+    - What daily activities can improve my language level?
+    - What can I do to improve my language level?
+    - Tips on language level improvement?
+    - Can you give me a piece of advice on how to improve my language level?
+    - How do I improve my English?
+    - How to learn to speak English better?
+~~~
 
-![](images/entity.png)
+Finally, you need to do two things in **domain.yml**.
+First, declare the new intent (as you declare variables in programming languages):
 
-Later in domain.yml, we define entities and slots, and write bot responses using slots. As you see, the entity and the slot have the same name. It makes it easier to fill the slot automatically. Rasa automatically stores entities into the slots of the same name.
+~~~
+intents:
+- ask_how_to_improve_english
+~~~
 
-![](images/entity-slot.png)
+Then, write the chatbot's answer. Make sure it doesn't hurt the user's feelings. Seriously. Oh, by the way, all response names have to start with "utter_", otherwise it won't work.
 
-We also need to specify possible responses that a chatbot can say to a user. These responses are hardcoded and can be found in the domain.yml file. As you can see, we created a response to the previously introduced intent “ask_how_to_improve_english” and this response is defined as “utter_ways_to_improve_english”.
+~~~
+responses:
+  utter_ways_to_improve_english:
+  - text: You can listen to the songs you like and learn them; watch movies with subtitles; take MOOCs you find interesting; read blogs, articles and books; write a diary in English; find new friends among native speakers and practice with them. What other fun ways can you think of?
+~~~
 
-![](images/response.png)
+That's it for one question (== intent) and answer.
 
-If we continue on the same example of a user asking how to improve her English, we now have both the intent which helps chatbot to understand what the user is meaning to ask and its response to this question. It is time to show the chatbot that which intents and responses are correlated. To do so, we may create rules.
+You can make your life a bit easier by [grouping the rules](https://rasa.com/docs/rasa/chitchat-faqs), then there will be no need to edit rules.yml for every intent.
 
-![](images/rule-example.png)
-
-Hence, if a user asks a question about how to improve English, our chatbot will understand this intent and take the following action which is to say the sentence defined in “utter_ways_to_improve_english”. We have also created other responses for the “ask_how_to_improve_english” intent.
-
-![](images/responses.png)
-
-**Training the Dialogue Management Model**
-
-We also need to train the dialogue management model. For this, the model requires rule or story data which are the combinations of both the intent behind what the user says and the chatbot response. This training is mainly to teach the model what to say/do depending on what the user said so far.
-
-Then we come up with stories for the chatbot to construct dialogue like conversations by using TED Policy. The stories are created in stories.md file. An example of how to create stories is as follows.
-
-![](images/stories-FAQ2.png)
-
-Different paths are defined for a conversation which starts by the user asking how much practice she should have. In all of the stories, at first the chatbot responds by asking whether one hour in five days would be realistic for the user (using the action: utter_is_one_hour_five_days_realistic). However the response of the user to this action may differ in real life, and stories tried to capture these various patterns. In the first story, the user chooses to go with what the chatbot suggests and hence the chatbot encourages the user in responses. In the second story, apparently what the chatbot suggests is too much for the user, and so it asks for an alternative plan. In the third story, the user says something irrelevant, and the chatbot is not insisting on answering the practice plan question but rather suggesting to talk about something else.
-
-For all these input data for the training model, we used Grammarly to correct our English for the chatbot’s responses as none of us is a native English speaker.
-
-In the end we had the following conversation with our chatbot:
+### How about something that looks like a real conversation? Rasa Stories
 
 ![](images/your-input.png)
 
-As you can see, even though the sentences of the user are not grammatically correct, the chatbot correctly identifies the intent and gives a proper response.
+To implement this one, more work is required. You need to think about how the conversation might go and encode several options in **storie.yml** (forget about rules.yml for this one, rules are only for "one user message -> one bot answer" scenarios).
+
+Here the conversation always starts with the user asking how much they should practice. In all of these stories, at first the chatbot suggesting a study plan and asking if it is realistic for the user (using the action: utter_is_one_hour_five_days_realistic). The user's responses can be different, and these stories tried to capture some common patterns. 
+
+In the first story, the user chooses to go with what the chatbot suggests and hence the chatbot encourages the user. In the second story, what the chatbot suggests is too much for the user, so the bot asks for an alternative plan. In the third story, the user says something irrelevant, and the chatbot is not insisting on answering the practice plan question.
+
+~~~
+stories:
+
+- story: how_much_practice_geek_path
+  steps:
+    - intent: ask_how_much_practice
+    - action: utter_is_one_hour_five_days_realistic
+    - intent: affirm
+    - action: utter_awesome_have_fun
+
+- story: how_much_practice_amateur_path
+  steps:
+    - intent: ask_how_much_practice
+    - action: utter_is_one_hour_five_days_realistic
+    - intent: deny
+    - action: utter_what_is_realistic_plan
+    - intent: describe_study_plan
+    - action: utter_good_plan
+
+- story: how_much_practice_blah_path
+  steps:
+    - intent: ask_how_much_practice
+    - action: utter_is_one_hour_five_days_realistic
+    - intent: out_of_scope
+    - action: utter_ok_ask_me_anything
+~~~
+
+Now we need to provide training examples for all the intents we need. That's again **nlu.yml**, like in the previous example.
+
+These intents are specific to the conversation about the study plan:
+
+~~~
+nlu:
+#FAQ2
+- intent: ask_how_much_practice
+  examples: |
+    - how much should i practice?
+    - for how long should i study?
+    - how many hours should i study?
+    - how often should i practice?
+    - is five minutes of practice enough?
+- intent: describe_study_plan
+  examples: |
+    - two days per week, 30 minutes per day
+    - once a week, fifteen minutes
+    - three days, one hour
+    - two days, 2 hours
+    - I guess 2 days, half an hour
+    - I think 3 days, twenty mins
+~~~
+
+And these are also used in other contexts:
+
+~~~
+# GENERAL
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - ok
+    
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - I didn't
+    - nope
+    
+- intent: out_of_scope
+  examples: |
+    - that's not what I want to do
+    - wait stop
+    - you are no help
+    - this is no help at all
+    - how old are you
+    - I want to order a pizza
+    - this isn't working
+    - I don't want to tell you that
+    - none of your business
+    - that's not right
+~~~
+
+Rasa doesn't care how you organize the intents, and the corresponding training examples. You can try to avoid complete chaos by writing comments, but then if you run an interactive learning session (Rasa X), all your comments and formatting will be deleted, surprise! This is "a known issue".
+
+Ok, so we have the stories and the intents. Now we need to declare the intents in **domain.yml**, like with the previous example, and write the bot's answers for all the different scenarios.
+
+~~~
+responses:
+ utter_is_one_hour_five_days_realistic:
+    - text: Is it realistic for you to practice five days a week, for one hour each day? Everything counts, including listening to songs and watching movies!
+  utter_awesome_have_fun:
+    - text: Awesome! Have fun learning English!
+  utter_what_is_realistic_plan:
+    - text: How many days per week can you practice? How many minutes per day? I'm curious what's your plan.
+  utter_good_plan:
+    - text: Nice plan! Be patient, stick to what you've decided, and you'll reach fluency!
+  utter_ok_ask_me_anything:
+    - text: Ok, looks like you don't want to answer. You can still ask me anything :)
+~~~
+
+Yes, it is that much work for a tiny conversation. Maybe it's easier to hire a human?
+
+### Call me by my name. Rasa Entities and Slots
+
+Theoretically, you can get Rasa to do virtually anything by writing Custom Actions in Python (or other programming language), but proper documentation for custom actions is nowhere to be found as of July 21, 2021.
+
+We tried to guess which syntax Rasa needs from unhelpful error messages, but failed miserably. The difficult thing is not to write in Python, but to connect the ML part with the Python part in Rasa. And, by the way, even if you manage to do it, you need to run Python on a second server (Action Server), apart from all the ML stuff.
+
+Without custom actions, it's impossible to save user messages, or the data extracted from them, anywhere except Rasa Slots, and only users themselves have access to those.
+
+Anyway, it feels good when someone calls you by your name, and that's doable with Rasa Slots & Entities.
+
+![](images/hi_Bob.jpg)
+
+Let's start with the intent in **nlu.yml**
+
+This intent (*say_name*) is in the *chitchat* group. We "teach" Rasa to recognize Entities in user messages like this:
+
+~~~
+nlu:
+- intent: chitchat/say_name
+  examples: |
+    - My name is [Bob](name)
+    - You can call me [Lindsey](name)
+    - I am [Erik](name)
+    - I'm [Ursula](name)
+    - Call me [Joe](name)
+~~~
+
+Now, **domain.yml** 
+
+Here's how the Slots and entities are defined in our case:
+
+~~~
+entities:
+  - name
+
+slots:
+  name:
+    type: text
+    influence_conversation: true
+    auto_fill: true
+~~~
+
+Notice that the entity and the slot have the same name, it saves some trouble.
+
+Also in **domain.yml**, as usual, we define bot response and embed the slot into it:
+
+~~~
+responses:
+
+  utter_chitchat/say_name:
+    - text: Nice to meet you, {name}!
+~~~
+
+You can define several alternative responses for one intent and let Rasa choose one of the responses randomly. You can check if the *name* slot is filled before uttering this "Nice to meet you", because otherwise you won't make your user happy:
+
+![](images/hi_None.jpg)
+
+Rasa Open Sourse is huge, there's a lot to explore, and the purpose of this blog post is not to give a complete overview, but to provide a general impression of how it's like to work with Rasa. So, for now, we're done with the examples.
 
 ### Advantages of Rasa
 
-- The computational time of training is faster than simple benchmark chatbots.
+- Rasa models train pretty quickly even on an old notebook (several minutes for a simple bot).
 
 - Even when the user message is grammatically incorrect or contains typos, the model is able to understand the intent of the user.
 
