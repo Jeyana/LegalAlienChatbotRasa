@@ -122,7 +122,7 @@ You can make your life a bit easier by [grouping the rules](https://rasa.com/doc
 
 ![](images/your-input.png)
 
-To implement this one, more work is required. You need to think about how the conversation might go and encode several options in **storie.yml** (forget about rules.yml for this one, rules are only for "one user message -> one bot answer" scenarios).
+To implement this one, more work is required. You need to think about how the conversation might go and encode several options in **stories.yml** (forget about rules.yml for this one, rules are only for "one user message -> one bot answer" scenarios).
 
 Here the conversation always starts with the user asking how much they should practice. In all of these stories, at first the chatbot suggesting a study plan and asking if it is realistic for the user (using the action: utter_is_one_hour_five_days_realistic). The user's responses can be different, and these stories tried to capture some common patterns. 
 
