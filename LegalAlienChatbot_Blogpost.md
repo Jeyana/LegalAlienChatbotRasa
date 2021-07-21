@@ -303,7 +303,7 @@ Rasa Open Source is huge, there's a lot to explore, and the purpose of this blog
 
 - Rasa models train pretty quickly even on an old notebook (several minutes for a simple bot).
 - Even when the user message is grammatically incorrect or contains typos, the model is able to understand the intent of the user.
-- Having two separate models (NLU and Dialogue Management Model) saves time. If you make a change that has to do with only one of these models, you don't need to retrain the other one.
+- Rasa trains NLU and Core models separately, and it saves time. If you make a change that has to do with only one of these models, you don't need to retrain the other one.
 - The fact that it is an open-source project gives the programmer high flexibility. If you don't like something about Rasa, you are very welcome to improve it.
 - Rasa is entirely written in Python! (already compatible with Python 3.8)
 - Training data is written in YAML files which are human-readable.
