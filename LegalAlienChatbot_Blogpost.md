@@ -6,7 +6,7 @@
 
 ![](images/telegram_new.jpg)
 
-The first three sections of this blog post explain the motivation for creating **LegalAlienChatbot** and provide some Machine Learning background. [Our Experience with Rasa Open Source](##our-experience-with-rasa-open-source) section is an informally written deep dive into our journey and the technical aspects of building a chatbot on a popular free platform.
+The first three sections of this blog post explain the motivation for creating **LegalAlienChatbot** and provide some Machine Learning background. [Our Experience with Rasa Open Source](#our-experience-with-rasa-open-source) section is an informally written deep dive into our journey and the technical aspects of building a chatbot on a popular free platform.
 
 ## Abstract
 
