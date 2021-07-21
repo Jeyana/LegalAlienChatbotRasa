@@ -46,6 +46,8 @@ responses:
     - text: Nice to meet you, {name}!
   utter_chitchat/ask_weather:
   - text: Where I am, it's dark, quiet, dry and quite warm. Unfortunately, I don't know how it is where you are.
+  utter_chitchat/are_you_human:
+  - text: I'm not a human. I'm a set of machine learning algorithms. But I'm flattered by your doubts ;)
   utter_faq:
   - text: TODO
   utter_is_one_hour_five_days_realistic:

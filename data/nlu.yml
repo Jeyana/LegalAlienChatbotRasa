@@ -35,6 +35,14 @@ nlu:
     - Does it look sunny outside today?
     - Oh, do you mind checking the weather for me please?
     - I like sunny days in Berlin.
+- intent: chitchat/are_you_human
+  examples: |
+    - are you a human?
+    - you're sure you're a bot?
+    - am I talking to a human?
+    - are you a bot?
+    - are you alive?
+    - you're too smart
 
 # GENERAL
 - intent: affirm
