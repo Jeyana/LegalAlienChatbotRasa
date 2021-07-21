@@ -187,11 +187,11 @@ nlu:
 #    - how many hours should i study?
 #    - how often should i practice?
 #    - is five minutes of practice enough?
-#- intent: ask_how_to_improve_english
-#  examples: |
-#    - What daily activities can improve my language level?
-#    - What can I do to improve my language level?
-#    - Tips on language level improvement?
-#    - Can you give me a piece of advice on how to improve my language level?
-#    - how do I improve my English?
-#    - how to learn to speak English better?
+- intent: ask_how_to_improve_english
+  examples: |
+    - What daily activities can improve my language level?
+    - What can I do to improve my language level?
+    - Tips on language level improvement?
+    - Can you give me a piece of advice on how to improve my language level?
+    - how do I improve my English?
+    - how to learn to speak English better?
