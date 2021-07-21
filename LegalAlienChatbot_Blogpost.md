@@ -54,7 +54,7 @@ Rasa is able to utilize different machine learning policies to decide which acti
 
 ## Our Experience with Rasa Open Source
 
-Soon after the project phase started, we realized that we don't have nearly enough time to build an impressive AI chatbot from scratch. We started to look for open-source solutions we can build upon. The first attempt was with the **HuggingFace** bot, described in [this blog post](https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313). That's where we got the idea of bot personality. The app itself turned out to be unimpressive, but at least it was funny.
+Soon after the project phase started, we realized that we don't have nearly enough time to build an impressive AI chatbot from scratch. We started to look for open-source solutions we can build upon. The first attempt was with the **HuggingFace** bot, described in [this blog post](https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313). That's where we got the idea of bot personality. The app itself turned out to be unimpressive, but at least it was funny. The bot's messages are in white:
 
 ![](images/hugging_face_not_impressive.png)
 
@@ -84,7 +84,7 @@ rules:
 
 Then, **nlu.yml** 
 
-You need to write some training examples for this particular user intent. What are some possible ways in which the users might express their intention? Write the ones you think are the most probable. Five examples are already a good start, because Rasa NLU models are pretrained.
+You need to write some training examples for this particular user intent. What are some possible ways in which the users might express their intention? Write the ones you think are the most probable. Five examples are already a good start, because Rasa NLU models are pretrained (that is, we're benefiting from *transfer learning*).
 
 ~~~
 nlu:
@@ -106,7 +106,7 @@ intents:
 - ask_how_to_improve_english
 ~~~
 
-Then, write the chatbot's answer. Make sure it doesn't hurt the user's feelings. Seriously. Oh, by the way, all response names have to start with "utter_", otherwise it won't work.
+Then, write the chatbot's answer. Make sure it doesn't hurt the user's feelings. Seriously. Oh, by the way, all *response* names have to start with "utter_", otherwise it won't work.
 
 ~~~
 responses:
@@ -124,9 +124,9 @@ You can make your life a bit easier by [grouping the intents](https://rasa.com/d
 
 To implement this one, more work is required. You need to think about how the conversation might go and encode several options in **stories.yml** (forget about rules.yml for this one, rules are only for "one user message -> one bot answer" scenarios).
 
-Here the conversation always starts with the user asking how much they should practice. In all of these stories, at first the chatbot suggesting a study plan and asking if it is realistic for the user (using the action: utter_is_one_hour_five_days_realistic). The user's responses can be different, and these stories tried to capture some common patterns. 
+Here the conversation always starts with the user asking how much they should practice. In all of these stories, the chatbot starts with suggesting a study plan and asking if it is realistic for the user (using *action: utter_is_one_hour_five_days_realistic*). The user's responses can be different, and these stories tried to capture some common patterns. 
 
-In the first story, the user chooses to go with what the chatbot suggests and hence the chatbot encourages the user. In the second story, what the chatbot suggests is too much for the user, so the bot asks for an alternative plan. In the third story, the user says something irrelevant, and the chatbot is not insisting on answering the practice plan question.
+In the first story, the user chooses to go with what the chatbot suggests. In the second story, the suggested study plan is too much for the user, so the bot asks for an alternative plan. In the third story, the user says something irrelevant, and the chatbot is not insisting on answering the practice plan question.
 
 ~~~
 stories:
@@ -179,7 +179,7 @@ nlu:
     - I think 3 days, twenty mins
 ~~~
 
-And these are also used in other contexts:
+And these intents are also used in other contexts:
 
 ~~~
 # GENERAL
@@ -220,7 +220,7 @@ And these are also used in other contexts:
     - that's not right
 ~~~
 
-Rasa doesn't care how you organize the intents, and the corresponding training examples. You can try to avoid complete chaos by writing comments, but then if you run an interactive learning session (Rasa X), all your comments and formatting will be deleted, surprise! This is "a known issue".
+Rasa doesn't care how you organize the intents and the corresponding training examples. You can try to avoid complete chaos by writing comments, but then if you run an interactive learning session (Rasa X), all your comments and formatting will be deleted, surprise! This is "a known issue".
 
 Ok, so we have the stories and the intents. Now we need to declare the intents in **domain.yml**, like with the previous example, and write the bot's answers for all the different scenarios.
 
@@ -242,11 +242,11 @@ Yes, it is that much work for a tiny conversation. Maybe it's easier to hire a h
 
 ### Call me by my name. Rasa Entities and Slots
 
-Theoretically, you can get Rasa to do virtually anything by writing Custom Actions in Python (or other programming language), but proper documentation for custom actions is nowhere to be found as of July 21, 2021.
+Theoretically, you can get Rasa to do virtually anything by writing Custom Actions in Python (or other programming language), but proper documentation for Custom Actions is nowhere to be found as of July 21, 2021.
 
 We tried to guess which syntax Rasa needs from unhelpful error messages, but failed miserably. The difficult thing is not to write in Python, but to connect the ML part with the Python part in Rasa. And, by the way, even if you manage to do it, you need to run Python on a second server (Action Server), apart from all the ML stuff.
 
-Without custom actions, it's impossible to save user messages, or the data extracted from them, anywhere except Rasa Slots, and only users themselves have access to those.
+Without Custom Actions, it's impossible to save user messages, or the data extracted from them, anywhere except Rasa Slots, and only users themselves have access to those.
 
 Anyway, it feels good when someone calls you by your name, and that's doable with Rasa Slots & Entities.
 
@@ -254,7 +254,7 @@ Anyway, it feels good when someone calls you by your name, and that's doable wit
 
 Let's start with the intent in **nlu.yml**
 
-This intent (*say_name*) is in the *chitchat* group. We "teach" Rasa to recognize Entities in user messages like this:
+This intent (*say_name*) is in the *chitchat* [group](https://rasa.com/docs/rasa/chitchat-faqs). After we recognize an Entity in the user message, it automatically fills the Slot with the same name (if the Slot settings are correct). We "teach" Rasa to recognize Entities in user messages like this:
 
 ~~~
 nlu:
@@ -282,9 +282,9 @@ slots:
     auto_fill: true
 ~~~
 
-Notice that the entity and the slot have the same name, it saves some trouble.
+Notice that the entity and the slot have the same name. Together with *auto_fill: true*, it makes the autofill possible.
 
-Also in **domain.yml**, as usual, we define bot response and embed the slot into it:
+Also in **domain.yml**, we define the bot response, as usual, and embed the slot into it:
 
 ~~~
 responses:
@@ -297,7 +297,7 @@ You can define several alternative responses for one intent and let Rasa choose 
 
 ![](images/hi_None.jpg)
 
-Rasa Open Source is huge, there's a lot to explore, and the purpose of this blog post is not to give a complete overview, but to provide a general impression of how it's like to work with Rasa. So, for now, we're done with the examples.
+Rasa Open Source is huge, there's a lot to explore, and the purpose of this blog post is not to give a complete overview, but to share how it was for us to work with Rasa. So, for now, we're done with the examples.
 
 ### Advantages of Rasa
 
@@ -305,14 +305,14 @@ Rasa Open Source is huge, there's a lot to explore, and the purpose of this blog
 - Even when the user message is grammatically incorrect or contains typos, the model is able to understand the intent of the user.
 - Rasa trains NLU and Core models separately, and it saves time. If you make a change that has to do with only one of these models, you don't need to retrain the other one.
 - The fact that it is an open-source project gives the programmer high flexibility. If you don't like something about Rasa, you are very welcome to improve it.
-- Rasa is entirely written in Python! (already compatible with Python 3.8)
+- Rasa is entirely written in Python and is already compatible with Python 3.8
 - Training data is written in YAML files which are human-readable.
 
 ### Disadvantages of Rasa
 
 - Debugging and collaboration can be a nightmare. Sometimes the errors are not caught, or the error messages are irrelevant and unhelpful, and you have to guess what actually went wrong.
 - The syntax for YAML files changes from version to version with no backward compatibility.
-- The documentation is incomplete. The "Rasa for Beginners" course on Udemy is outdated. A lot of "figuring out" must happen before you get anything to work.
+- The documentation is incomplete. The "Rasa for Beginners" course on Udemy is outdated. A lot of figuring out must happen before you get anything to work.
 - Machine Learning happens only when Rasa recognizes user messages and predicts bot actions. The actual bot messages are hardcoded, not generated (although they can contain variables extracted from user messages or generated with Python code).
 
 ## Conclusion
