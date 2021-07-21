@@ -58,7 +58,7 @@ Soon after the project phase started, we realized that we don't have nearly enou
 
 ![](images/hugging_face_not_impressive.png)
 
-After searching some more, we decided to focus on **Rasa Open Source**. It looked very promising, like the gentle waves of the Black Sea. You realize that's it's full of poisonous jellyfish only when you're already neck-deep, but more on that later. 
+After searching some more, we decided to focus on **Rasa Open Source**. It looked very promising, like the gentle waves of the Black Sea. You realize that it's full of poisonous jellyfish only when you're already neck-deep, but more on that later. 
 
 ### First success: language learning FAQ question recognized and answered correctly. Rasa Rules
 
@@ -297,7 +297,7 @@ You can define several alternative responses for one intent and let Rasa choose 
 
 ![](images/hi_None.jpg)
 
-Rasa Open Sourse is huge, there's a lot to explore, and the purpose of this blog post is not to give a complete overview, but to provide a general impression of how it's like to work with Rasa. So, for now, we're done with the examples.
+Rasa Open Source is huge, there's a lot to explore, and the purpose of this blog post is not to give a complete overview, but to provide a general impression of how it's like to work with Rasa. So, for now, we're done with the examples.
 
 ### Advantages of Rasa
 
