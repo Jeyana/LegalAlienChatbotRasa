@@ -105,8 +105,6 @@ In the end we had the following conversation with our chatbot:
 
 As you can see, even though the sentences of the user are not grammatically correct, the chatbot correctly identifies the intent and gives a proper response.
 
-Our github repo can be found in the following link: https://github.com/Jeyana/LegalAlienChatbotRasa
-
 ### Advantages of Rasa
 
 - The computational time of training is faster than simple benchmark chatbots.
@@ -137,5 +135,15 @@ With this project, we also wanted to show that AI is an awesome tool that can he
 “The idea is not to replace human teachers, but to provide some extra help to those who need it”. 
 
 And we absolutely agree. 
+
+## Chat with LegalAlien!
+
+Our [GitHub repo](https://github.com/Jeyana/LegalAlienChatbotRasa) is public. You can fork it and experiment with the code. Everything is there, except for the Telegram credentials, of course.
+
+You can also just search for **@LegalAlienChatbot** on Telegram and write a message!
+
+If you run into problems or want to share your experience, send an email to **legalalienchatbot@gmail.com**
+
+Thank you for your interest!
 
 
