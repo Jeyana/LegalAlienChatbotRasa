@@ -138,9 +138,7 @@ And we absolutely agree.
 
 ## Chat with LegalAlien!
 
-Our [GitHub repo](https://github.com/Jeyana/LegalAlienChatbotRasa) is public. You can fork it and experiment with the code. Everything is there, except for the Telegram credentials, of course.
-
-You can also just search for **@LegalAlienChatbot** on Telegram and write a message!
+You can search for **@LegalAlienChatbot** on Telegram and write a message.
 
 If you run into problems or want to share your experience, send an email to **legalalienchatbot@gmail.com**
 
