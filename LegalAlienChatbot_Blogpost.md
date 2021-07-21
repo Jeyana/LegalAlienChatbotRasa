@@ -51,6 +51,12 @@ The Rasa process works as follows:
 Rasa is able to utilize different machine learning policies to decide which action to take. The ones we implemented are Rule Policy, The Transformer Embedding Dialogue (TED) Policy and Memoization Policy. Rule Policy is used for relatively simple cases in which the model needs to classify only one message of the user. On the other hand, TED and Memoization Policies are utilized for more complex cases. The parameters of these policies can be adjusted manually through the config.yml file. For example, we experimented with the number of epochs for DIETClassifier and ResponseSelector.
 
 ## Our Experience with Rasa Open Source
+
+
+
+
+
+
 **Training the NLU Model**
 
 NLU training data is formed of intents which are basically the categorization of the possible user messages, and entities. Intents consist of training examples that represent all of the different ways a user might express the intent. Here is an example of an intent and training examples. 
