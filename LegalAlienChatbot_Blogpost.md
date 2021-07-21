@@ -4,7 +4,7 @@
 
 **Mentor**: Matthijs Rijm
 
-![](https://raw.githubusercontent.com/Jeyana/LegalAlienBlogpost/main/images/telegram_new.jpg)
+![Telegram chat with LegalAlien](https://raw.githubusercontent.com/Jeyana/LegalAlienBlogpost/main/images/telegram_new.jpg)
 
 The first three sections of this blog post explain the motivation for creating **LegalAlienChatbot** and provide some Machine Learning background. [Our Experience with Rasa Open Source](#our-experience-with-rasa-open-source) section is an informally written deep dive into our journey and the technical aspects of building a chatbot on a popular free platform.
 
@@ -56,7 +56,7 @@ Rasa is able to utilize different machine learning policies to decide which acti
 
 Soon after the project phase started, we realized that we don't have nearly enough time to build an impressive AI chatbot from scratch. We started to look for open-source solutions we can build upon. The first attempt was with the **HuggingFace** bot, described in [this blog post](https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313). That's where we got the idea of bot personality. The app itself turned out to be unimpressive, but at least it was funny. The bot's messages are in white:
 
-![](https://raw.githubusercontent.com/Jeyana/LegalAlienBlogpost/main/images/hugging_face_not_impressive.png)
+![HuggingFace](https://raw.githubusercontent.com/Jeyana/LegalAlienBlogpost/main/images/hugging_face_not_impressive.png)
 
 After searching some more, we decided to focus on **Rasa Open Source**. It looked very promising, like the gentle waves of the Black Sea. You realize that it's full of poisonous jellyfish only when you're already neck-deep, but more on that later. 
 
@@ -66,7 +66,7 @@ After you're done with [Rasa installation](https://rasa.com/docs/rasa/installati
 
 This is the first conversation about language learning we managed to have with LegalAlien:
 
-![](https://raw.githubusercontent.com/Jeyana/LegalAlienBlogpost/main/images/how_improve_eng_conv.jpg)
+![improve English](https://raw.githubusercontent.com/Jeyana/LegalAlienBlogpost/main/images/how_improve_eng_conv.jpg)
 
 In order to make this kind of thing possible, one has to edit three different YAML files. Great opportunity to make a typo somewhere, not get any error, and spend hours trying to figure out what went wrong!
 
@@ -120,7 +120,7 @@ You can make your life a bit easier by [grouping the intents](https://rasa.com/d
 
 ### How about something that looks like a real conversation? Rasa Stories
 
-![](https://raw.githubusercontent.com/Jeyana/LegalAlienBlogpost/main/images/your-input.png)
+![conversation](https://raw.githubusercontent.com/Jeyana/LegalAlienBlogpost/main/images/your-input.png)
 
 To implement this one, more work is required. You need to think about how the conversation might go and encode several options in **stories.yml** (forget about rules.yml for this one, rules are only for "one user message -> one bot answer" scenarios).
 
@@ -250,7 +250,7 @@ Without Custom Actions, it's impossible to save user messages, or the data extra
 
 Anyway, it feels good when someone calls you by your name, and that's doable with Rasa Slots & Entities.
 
-![](https://raw.githubusercontent.com/Jeyana/LegalAlienBlogpost/main/images/hi_Bob.jpg)
+![call me Bob](https://raw.githubusercontent.com/Jeyana/LegalAlienBlogpost/main/images/hi_Bob.jpg)
 
 Let's start with the intent in **nlu.yml**
 
@@ -295,7 +295,7 @@ responses:
 
 You can define several alternative responses for one intent and let Rasa choose one of the responses randomly. You can check if the *name* slot is filled before uttering this "Nice to meet you", because otherwise you won't make your user happy:
 
-![](https://raw.githubusercontent.com/Jeyana/LegalAlienBlogpost/main/images/hi_None.jpg)
+![None](https://raw.githubusercontent.com/Jeyana/LegalAlienBlogpost/main/images/hi_None.jpg)
 
 Rasa Open Source is huge, there's a lot to explore, and the purpose of this blog post is not to give a complete overview, but to share how it was for us to work with Rasa. So, for now, we're done with the examples.
 
