@@ -40,13 +40,13 @@ To utilize an NLU model, we used Rasa which is an open source machine learning p
 
 The Rasa process works as follows: 
 
-1.The user writes a message by using a messaging channel such as Telegram, Facebook Messenger, Slack etc.
+1. The user writes a message by using a messaging channel such as Telegram, Facebook Messenger, Slack etc.
 
-2.This message is given as an input to the NLU model which transforms the message into a machine readable format. The NLU model makes a prediction to classify the meaning of the message (intent) and returns this output to the Dialogue Management model.
+2. This message is given as an input to the NLU model which transforms the message into a machine readable format. The NLU model makes a prediction to classify the meaning of the message (intent) and returns this output to the Dialogue Management model.
 
-3.The Dialogue Management Model decides what the chatbot should do next (action).
+3. The Dialogue Management Model decides what the chatbot should do next (action).
 
-4.Then Rasa Open Source chooses a response to give back to the user based on the set of responses.
+4. Then Rasa Open Source chooses a response to give back to the user based on the set of responses.
 
 Rasa is able to utilize different machine learning policies to decide which action to take. The ones we implemented are Rule Policy, The Transformer Embedding Dialogue (TED) Policy and Memoization Policy. Rule Policy is used for relatively simple cases in which the model needs to classify only one message of the user. On the other hand, TED and Memoization Policies are utilized for more complex cases. The parameters of these policies can be adjusted manually through the config.yml file. For example, we experimented with the number of epochs for DIETClassifier and ResponseSelector.
 
