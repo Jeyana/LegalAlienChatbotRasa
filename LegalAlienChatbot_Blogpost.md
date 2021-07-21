@@ -111,11 +111,11 @@ Our github repo can be found in the following link: https://github.com/Jeyana/Le
 
 - The computational time of training is faster than simple benchmark chatbots.
 
-- Even when the user message is gramatically incorrect or contains typos, the model is able to understand the intent of the user.
+- Even when the user message is grammatically incorrect or contains typos, the model is able to understand the intent of the user.
 
 - Having two separate models (NLU and Dialogue Management Model) saves time. If you make a change that has to do with only one of these models, you don't need to retrain the other one.
 
-- The fact that it is an open source project gives the programmer high flexibility. If you don't like something about Rasa, you are very welcome to improve it.
+- The fact that it is an open-source project gives the programmer high flexibility. If you don't like something about Rasa, you are very welcome to improve it.
 
 - Rasa is entirely written in Python! (also integrated with Python 3.8)
 
@@ -124,15 +124,15 @@ Our github repo can be found in the following link: https://github.com/Jeyana/Le
 ### Disadvantages of Rasa
 
 - Debugging and collaboration can be a nightmare. Sometimes the errors are not caught, or the error messages are irrelevant and unhelpful, and you have to guess what actually went wrong.
-- The syntax for YAML files changes from version to version with no backwards compatibility.
-- The documentation is incomplete, the "Rasa for Beginners" course on Udemy is outdated. A lot of "figuring out" must happen before you get anything to work.
+- The syntax for YAML files changes from version to version with no backward compatibility.
+- The documentation is incomplete. The "Rasa for Beginners" course on Udemy is outdated. A lot of "figuring out" must happen before you get anything to work.
 - Machine Learning happens only when Rasa recognizes user messages and predicts bot actions. The actual bot messages are hardcoded, not generated (although they can contain variables extracted from user messages or generated with Python code).
 
 ## Conclusion
 
 Rasa might be one of the best **free** conversational AI platforms out there, and we had a lot of fun creating this project together. Still, we wouldn't recommend Rasa for teams with more than one programmer, or for large and complex chatbots.
 
-With this project we also wanted to show that AI is an awesome tool that can help people acquire news skills. We even asked a GPT3-based AI what it thought about a bot that teaches English. Here’s the response:
+With this project, we also wanted to show that AI is an awesome tool that can help people acquire new skills. We even asked a GPT3-based AI what it thought about a bot that teaches English. Here’s the response:
 
 “The idea is not to replace human teachers, but to provide some extra help to those who need it”. 
 
