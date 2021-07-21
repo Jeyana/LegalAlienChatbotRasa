@@ -116,7 +116,7 @@ responses:
 
 That's it for one question (== intent) and answer.
 
-You can make your life a bit easier by [grouping the rules](https://rasa.com/docs/rasa/chitchat-faqs), then there will be no need to edit rules.yml for every intent.
+You can make your life a bit easier by [grouping the intents](https://rasa.com/docs/rasa/chitchat-faqs), then there will be no need to edit rules.yml for every intent.
 
 ### How about something that looks like a real conversation? Rasa Stories
 
