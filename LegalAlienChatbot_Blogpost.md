@@ -144,7 +144,7 @@ And we absolutely agree.
 
 ## Chat with LegalAlien!
 
-You can search for **@LegalAlienChatbot** on Telegram and write a message.
+You can search for **@LegalAlienChatbot** on Telegram and write a message. The bot will be live from July 31, 2021.
 
 If you run into problems or want to share your experience, send an email to **legalalienchatbot@gmail.com**
 
