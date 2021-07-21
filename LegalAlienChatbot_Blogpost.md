@@ -1,14 +1,18 @@
-**LegalAlienChatbot**
+***LegalAlienChatbot: your AI language buddy, powered by Rasa Open Source***
 
-Techies: Jeyana Morozenko, Violetta Shishkina, Nazlı Dolu 
+Techies: Jeyana Morozenko, Violetta Shishkina, Nazlı Dolu (team TalkingHeads)
 
 Mentor: Matthijs Rijm
 
 ![](images/telegram_new.jpg)
 
+The first three sections of this blog post explain the motivation for creating LegalAlienChatbot and provide some ML background. "Our experience with Rasa Open Source" section is an informally written deep dive into our journey and the technical aspects of building a chatbot on a popular free platform.
+
 **Abstract**
 
 With our project, we aim to build a chatbot to help people overcome foreign language anxiety, which is a big part of a language barrier. This is mainly the feeling of unease, worry, nervousness and apprehension experienced in learning or using a foreign language. We believe that before directly talking with a person, some written exercise with a human-like chatbot could ease the foreign language anxiety and increase the pace of language learning. For this purpose, we used a natural language understanding model. We created a chatbot using Rasa, an open source conversational AI platform.
+
+Unlike Grammarly, LegalAlien does not correct user's messages, but it is pretty good at understanding bad English. It can answer questions about language learning, help you develop a study plan, or simply chitchat with you. LegalAlien is available 24/7, it is never annoyed by the mistakes you make, and you can never accidentally offend it.
 
 **Introduction**
 
