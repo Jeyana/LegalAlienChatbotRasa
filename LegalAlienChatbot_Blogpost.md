@@ -1,42 +1,42 @@
-***LegalAlienChatbot: your AI language buddy, powered by Rasa Open Source***
+# LegalAlienChatbot: your AI language buddy, powered by Rasa Open Source
 
-Techies: Jeyana Morozenko, Violetta Shishkina, Nazlı Dolu (team TalkingHeads)
+**Techies**: Jeyana Morozenko, Violetta Shishkina, Nazlı Dolu *(team TalkingHeads)*
 
-Mentor: Matthijs Rijm
+**Mentor**: Matthijs Rijm
 
 ![](images/telegram_new.jpg)
 
-The first three sections of this blog post explain the motivation for creating LegalAlienChatbot and provide some ML background. "Our experience with Rasa Open Source" section is an informally written deep dive into our journey and the technical aspects of building a chatbot on a popular free platform.
+The first three sections of this blog post explain the motivation for creating **LegalAlienChatbot** and provide some Machine Learning background. [Our Experience with Rasa Open Source](Our Experience with Rasa Open Source) section is an informally written deep dive into our journey and the technical aspects of building a chatbot on a popular free platform.
 
-**Abstract**
+## Abstract
 
 With our project, we aim to build a chatbot to help people overcome foreign language anxiety, which is a big part of a language barrier. This is mainly the feeling of unease, worry, nervousness and apprehension experienced in learning or using a foreign language. We believe that before directly talking with a person, some written exercise with a human-like chatbot could ease the foreign language anxiety and increase the pace of language learning. For this purpose, we used a natural language understanding model. We created a chatbot using Rasa, an open source conversational AI platform.
 
 Unlike Grammarly, LegalAlien does not correct user's messages, but it is pretty good at understanding bad English. It can answer questions about language learning, help you develop a study plan, or simply chitchat with you. LegalAlien is available 24/7, it is never annoyed by the mistakes you make, and you can never accidentally offend it.
 
-**Introduction**
+##Introduction
 
-Research has shown that foreign language anxiety is an important issue in language learning throughout the world especially in terms of its strong relationship to the skill of speaking in a foreign or second language. This may have a significant effect on peoples' confidence and self-esteem causing individuals to be quieter and less willing to communicate.
+It is quite natural for people to be afraid of starting to speak a foreign language, even if they already understand a lot. This may have a significant effect on their confidence and self-esteem causing individuals to be quieter and less willing to communicate.
 
-Language barrier is a broad term for this kind of a roadblock and it hinders communication tremendously. An example would be a learner of English communicating with a native speaker and being afraid of it. There are several underlying reasons, some of them are linked to experience (or language proficiency) and others are purely psychological. The fear of not being understood, the fear of misunderstanding the interlocutor, the “shame” of the non-native accent can be a huge barrier on the way to speaking a foreign language and enjoying it. If on top of that, we have a person who is an introvert, or has low self-esteem, this barrier can become an impenetrable wall that might just make the person give up the idea of speaking a new language.  
+Language barrier is a broad term for this kind of a roadblock and it hinders communication tremendously. There are several underlying reasons, some of them are linked to experience (or language proficiency) and others are purely psychological. The fear of not being understood, the fear of misunderstanding the interlocutor, the “shame” of the non-native accent can be a huge barrier on the way to speaking a foreign language and enjoying it. If on top of that, we have a person who is an introvert, or has low self-esteem, this barrier can become an impenetrable wall that might make the person give up the idea of speaking a new language.  
 
-One piece of advice that people with foreign language anxiety are given is to imagine how the discussion will likely go and think about what you want to say. Great! Prepare the required phrases and play out the scenario as if you were actually using them. Then we thought, why not do this with the help of technology?
+One piece of advice that people with foreign language anxiety are given is to imagine how the discussion might go and think about what they want to say. Great! Prepare the required phrases and play out the scenario as if you were actually using them. Then we thought, why not do this with the help of technology?
 
-Our goal was to build a chatbot that is fun to talk to. We thought that if the chatbot could imitate a person, users could improve themselves in personal communication until they felt confident enough to talk to a real person. To achieve this, we worked with Rasa which is an open source machine learning framework for automated text and voice-based conversations. It understands user messages and constructs conversations.
+Our goal was to build a chatbot that is fun to talk to. We thought that if the chatbot could imitate a person, users could improve themselves in personal communication until they felt confident enough to talk to real people. To achieve this, we worked with Rasa which is an open source machine learning framework for automated text and voice-based conversations. It understands user messages and constructs conversations.
 
-So, if you are a learner of English as a foreign language, who knows basic grammar and has enough vocabulary to build simple sentences, desperately needs practice but does not feel confident to communicate with other English speakers, reach out to us and check the chatbot out! 
+So, if you are a learner of English as a foreign language, who knows basic grammar and has enough vocabulary to build simple sentences, desperately needs practice but does not feel confident to communicate with other English speakers, reach out to us and try LegalAlien! 
 
-Our chatbot is a talking buddy that is always there for you. LegalAlienChatbot is to help you transition from theory to practice in a fun way and on your own schedule. Learning should not be boring, otherwise it brings no long-term results. The fear of using the language can easily make any learner lose their motivation and give up. 
+Our chatbot is a language buddy that is always there for you. It can help you transition from theory to practice in a fun way and on your own schedule. Learning should not be boring, otherwise it brings no long-term results. The fear of using the language can easily make any learner lose their motivation and give up. 
 
 Remember, you are not alone on this journey of learning something new! 
 
-**Method**
+##Method
 
-In order to create a chatbot before the development of machine learning algorithms, one had to write a hard coded rule based program. This would require the programmer to think of every possible way that a user might say something so that it could map the correct response of the chatbot. There are two downsides of this method. One of them is the fact that it is not possible to think of every possible sentence a user might write. Another one is, even though we assume that the programmer “somehow” finds out the way of enumerating all the sentences, the user might make a typo and the algorithm won’t be able to understand this. To avoid these downsides and actually come up with what we expect our chatbot to do, we examined natural language programming (NLP) models. 
+In order to create a chatbot before the development of machine learning algorithms, one had to write a rule based program, where all the user messages and bot responses are hardcoded. This would require the programmer to think of every possible way that a user might say something so that it could map the correct response of the chatbot. There are two downsides of this method. One of them is the fact that it is not possible to think of every possible sentence a user might write. Another one is, even though we assume that the programmer “somehow” finds out the way of enumerating all the sentences, the user might make a typo and the algorithm won’t be able to understand this. To avoid these downsides and actually achieve what we expect our chatbot to do, we examined natural language programming (NLP) models. 
 
-NLP is a subfield of artificial intelligence (AI) which deals with methods of programming computers to process large amounts of natural language data. However, the chatbot needs to understand what the user is saying and it also is also required to decide what to say in response. Hence, it should also understand the context of data (what the user means when they are saying something). To achieve this, natural language understanding (NLU) takes the center stage. NLU is a subfield of NLP. While NLP ensures the transformation of large amounts of unstructured natural language texts into structured data, NLU focuses on deriving insights from this structured data. The use of NLU allows chatbots to comprehend the context.
+NLP is a subfield of artificial intelligence (AI) which deals with methods of programming computers to process large amounts of natural language data. However, the chatbot needs to understand what the user is saying, and it is also required to decide what to say in response. Hence, it should understand the context of data (what the user means when they are saying something). To achieve this, natural language understanding (NLU) takes the center stage. NLU is a subfield of NLP. While NLP ensures the transformation of large amounts of unstructured natural language texts into structured data, NLU focuses on deriving insights from this structured data. The use of NLU allows chatbots to comprehend the context.
 
-To utilize an NLU model, we used Rasa which is an open source machine learning framework for automated text.
+To utilize an NLU model, we used Rasa which is an open source machine learning platform.
 
 The Rasa process works as follows: 
 
@@ -46,10 +46,11 @@ The Rasa process works as follows:
 
 3.The Dialogue Management Model decides what the chatbot should do next (action).
 
-4.Then Rasa open source chooses a response to give back to the user based on the set of responses.
+4.Then Rasa Open Source chooses a response to give back to the user based on the set of responses.
 
-Rasa is able to utilize different machine learning policies to decide which action to take. The ones we implemented are Rule Policy, The Transformer Embedding Dialogue (TED) Policy and Memoization Policy. Rule Policy is used for relatively simple cases in which the model needs to classify only one message of the user. On the other hand, TED and Memoization Policies are utilized for more complex cases. Parameters of these policies are defined in the config.yml file. For example, we changed the number of epochs for DIETClassifier and ResponseSelector from default 100 to 50, and in our case 50 epochs are enough for good results. With a reduced number of epochs, the models train faster. 
+Rasa is able to utilize different machine learning policies to decide which action to take. The ones we implemented are Rule Policy, The Transformer Embedding Dialogue (TED) Policy and Memoization Policy. Rule Policy is used for relatively simple cases in which the model needs to classify only one message of the user. On the other hand, TED and Memoization Policies are utilized for more complex cases. The parameters of these policies can be adjusted manually through the config.yml file. For example, we experimented with the number of epochs for DIETClassifier and ResponseSelector.
 
+##Our Experience with Rasa Open Source
 **Training the NLU Model**
 
 NLU training data is formed of intents which are basically the categorization of the possible user messages, and entities. Intents consist of training examples that represent all of the different ways a user might express the intent. Here is an example of an intent and training examples. 
@@ -106,29 +107,30 @@ As you can see, even though the sentences of the user are not grammatically corr
 
 Our github repo can be found in the following link: https://github.com/Jeyana/LegalAlienChatbotRasa
 
-**Advantages of Rasa**
+### Advantages of Rasa
 
--The computational time of training is faster than simple benchmark chatbots.
+- The computational time of training is faster than simple benchmark chatbots.
 
--Even though the user makes a typo while writing a question, the model is able to understand the intent of the user.
+- Even when the user message is gramatically incorrect or contains typos, the model is able to understand the intent of the user.
 
--Having two separate models (NLU and Dialogue Management Model) is beneficial for practical purposes. For instance, if you make a change in one of these models, you only need to retrain the model you make a change to, this saves time and computation power.
+- Having two separate models (NLU and Dialogue Management Model) saves time. If you make a change that has to do with only one of these models, you don't need to retrain the other one.
 
--The fact that it is an open source project gives the programmer high flexibility.
+- The fact that it is an open source project gives the programmer high flexibility. If you don't like something about Rasa, you are very welcome to improve it.
 
--And it is entirely written in Python! (also integrated with Python 3.8)
+- Rasa is entirely written in Python! (also integrated with Python 3.8)
 
--Training data is written in markdown files which is also easy for programmers to read and write.
+- Training data is written in YAML files which are human-readable.
 
-**Disadvantages of Rasa**
+### Disadvantages of Rasa
 
--Not that practical for debugging and collaboration.
+- Debugging and collaboration can be a nightmare. Sometimes the errors are not caught, or the error messages are irrelevant and unhelpful, and you have to guess what actually went wrong.
+- The syntax for YAML files changes from version to version with no backwards compatibility.
+- The documentation is incomplete, the "Rasa for Beginners" course on Udemy is outdated. A lot of "figuring out" must happen before you get anything to work.
+- Machine Learning happens only when Rasa recognizes user messages and predicts bot actions. The actual bot messages are hardcoded, not generated (although they can contain variables extracted from user messages or generated with Python code).
 
--The model can only learn from the input of the user, the responses of the chatbot are hardcoded.
+##Conclusion
 
-**Conclusion**
-
-Rasa might be one of the best FREE conversational AI platforms out there, and we had a lot of fun creating this project together. Still, we wouldn't recommend Rasa for teams with more than one programmer, or for large and complex chatbots.
+Rasa might be one of the best **free** conversational AI platforms out there, and we had a lot of fun creating this project together. Still, we wouldn't recommend Rasa for teams with more than one programmer, or for large and complex chatbots.
 
 With this project we also wanted to show that AI is an awesome tool that can help people acquire news skills. We even asked a GPT3-based AI what it thought about a bot that teaches English. Here’s the response:
 
