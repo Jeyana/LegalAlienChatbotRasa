@@ -1,5 +1,6 @@
-BEFORE COMMITTING ALWAYS DO "rasa test" AND CHECK results/failed_test_stories.yml & response_selection_report.json
+BEFORE PUSHING ALWAYS RUN "rasa test" AND CHECK results/failed_test_stories.yml & response_selection_report.json
 WRITE tests/test_stories.yml FOR ALL STORIES!
+ALSO: RUN "rasa data validate" and check the log
 
 
 Policies (RulePolicy, MemoizationPolicy, TEDPolicy etc.): https://rasa.com/docs/rasa/policies/
