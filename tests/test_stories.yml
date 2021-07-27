@@ -1,7 +1,50 @@
 #### This file contains tests to evaluate that your bot behaves as expected.
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
+version: '2.0'
+
+# There is no point in writing "rules:" here, they are ignored.
+# In order to test ResponseSelector, split the training set
+
 stories:
+  #FAQ2
+  - story: how_much_practice_geek_path
+    steps:
+      - user: |
+          how much practise should I?
+        intent: ask_how_much_practice
+      - action: utter_is_one_hour_five_days_realistic
+      - user: |
+          yep, sure
+        intent: affirm
+      - action: utter_awesome_have_fun
+
+  - story: how_much_practice_amateur_path
+    steps:
+      - user: |
+          for how long should I study?
+        intent: ask_how_much_practice
+      - action: utter_is_one_hour_five_days_realistic
+      - user: |
+          ehm... no
+        intent: deny
+      - action: utter_what_is_realistic_plan
+      - user: |
+          maybe 3 days for 15 mins
+        intent: describe_study_plan
+      - action: utter_good_plan
+
+  - story: how_much_practice_blah_path
+    steps:
+      - user: |
+          for how long how often I study?
+        intent: ask_how_much_practice
+      - action: utter_is_one_hour_five_days_realistic
+      - user: |
+          blah i want a pizza
+        intent: out_of_scope
+      - action: utter_ok_ask_me_anything
+
 
 
 #DEFAULT TEST STORIES
