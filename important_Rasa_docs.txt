@@ -1,3 +1,7 @@
+BEFORE COMMITTING ALWAYS DO "rasa test" AND CHECK results/failed_test_stories.yml & response_selection_report.json
+WRITE tests/test_stories.yml FOR ALL STORIES!
+
+
 Policies (RulePolicy, MemoizationPolicy, TEDPolicy etc.): https://rasa.com/docs/rasa/policies/
 
 How to group all chitchat and FAQ questions: https://rasa.com/docs/rasa/chitchat-faqs
