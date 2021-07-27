@@ -50,8 +50,12 @@ responses:
   - text: Where I am, it's dark, quiet, dry and quite warm. Unfortunately, I don't know how it is where you are.
   utter_chitchat/are_you_human:
   - text: I'm not a human. I'm a set of machine learning algorithms. But I'm flattered by your doubts ;)
-  utter_faq:
-  - text: TODO
+
+  utter_faq/where_do_i_start:
+    - text: Start with reading and listening to things you find interesting. This way you'll grow your vocabulary. You can dive into grammar a bit later.
+  utter_faq/tenses:
+    - text: "There are only three main tenses: Past, Present and Future. In English, for each of them we need to specify an aspect: Simple, Progressive, Perfect or Perfect Progressive. You can already start speaking and be understood by other people if you know only Past Simple, Present Simple and Future Simple!"
+
   utter_is_one_hour_five_days_realistic:
     - text: Is it realistic for you to practice five days a week, for one hour each day? Everything counts, including listening to songs and watching movies!
   utter_awesome_have_fun:

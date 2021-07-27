@@ -43,6 +43,26 @@ nlu:
     - are you a bot?
     - are you alive?
     - you're too smart
+#FAQ4
+- intent: faq/where_do_i_start
+  examples: |
+    - where do I start?
+    - how do I start learning English?
+    - how do I start?
+    - what should I start with?
+    - how to start learning?
+    - where do I begin?
+    - I don't know what to do first
+
+#FAQ5
+- intent: faq/tenses
+  examples: |
+    - what are the basic tenses in English?
+    - English main tenses?
+    - what are the main tenses?
+    - how many verb tenses are there?
+    - verb tenses in English?
+    - which tenses do I need to know?
 
 # GENERAL
 - intent: affirm
