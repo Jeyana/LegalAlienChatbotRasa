@@ -1,6 +1,7 @@
 Policies (RulePolicy, MemoizationPolicy, TEDPolicy etc.): https://rasa.com/docs/rasa/policies/
 
 How to group all chitchat and FAQ questions: https://rasa.com/docs/rasa/chitchat-faqs
+IMPORTANT: define at least two concrete intents&responses for each group, otherwise ResponseSelector will fail to train.
 
 All the Response names should start with "utter_"! https://rasa.com/docs/rasa/responses
 
@@ -42,3 +43,7 @@ Actions are run in a separate server! If there's anything in python.py:
 3. conda activate ENVIRONMENT_NAME
 4. rasa run actions
 5. Open the second terminal, do "rasa run" or "rasa shell"
+
+
+TO READ:
+Actions, Rasa 2.7: https://rasa.com/docs/action-server/2.7.0/actions
