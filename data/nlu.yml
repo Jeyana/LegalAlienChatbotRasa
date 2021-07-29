@@ -63,6 +63,10 @@ nlu:
     - Can you give me a piece of advice on how to improve my language level?
     - how do I improve my English?
     - how to learn to speak English better?
+    - How can I improve my vocabulary?
+    - What can I do to improve my vocabulary?
+    - My vocabulary needs improvement. Got any advice?
+    - Got any advice on vocabulary improvement?
 
 #FAQ4
 - intent: faq/where_do_i_start
