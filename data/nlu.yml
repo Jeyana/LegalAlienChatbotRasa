@@ -51,8 +51,99 @@ nlu:
     - you're sure you're a bot?
     - am I talking to a human?
     - are you a bot?
-    - are you alive?
     - you're too smart
+
+#CC1
+- intent: chitchat/who_are_you
+  examples: |
+    - who is this?
+    - who are you?
+    - who am I speaking with?
+    - what are you?
+    - who are you after all?
+
+
+#CC3
+- intent: chitchat/where_do_you_live
+  examples: |
+    - where do you live?
+    - where are you?
+    - where are you now?
+    - from where are you writing?
+    - where is your office?
+
+- intent: chitchat/contact_creators
+  examples: |
+    - how do I contact your creators?
+    - how to contact the programmer?
+    - how to speak to your gods?
+    - i'd like to speak to you creator
+    - i want to complain about you
+    - i have a complaint
+    - i'd like to change you
+    - how can i change you?
+    - how do i write to team TalkingHeads
+    - what's your email?
+    - what's your creator's email?
+    - is there a god?
+    - do you believe in god?
+
+#CC4 How are you TODO
+
+#CC5
+- intent: chitchat/bot_purpose
+  examples: |
+    - what is your purpose?
+    - what's your goal?
+    - why do you exist?
+
+#CC6
+- intent: chitchat/music #TODO: turn into a set of stories
+  examples: |
+    - what kind of music do you like?
+    - recommend me some music
+    - what music do you listen to?
+    - do you like music?
+    - what's your favourite song?
+    - who's your favourite singer?
+    - do you enjoy listening to music?
+
+#CC7
+- intent: chitchat/films
+  examples: |
+    - can you recommend me a film?
+    - I'd like to watch a movie
+    - do you like movies?
+    - do you watch films?
+    - how about a good movie?
+    - some other film
+
+#CC8
+- intent: chitchat/tv_series
+  examples: |
+    - what's your favourite tv series?
+    - do you watch tv?
+    - recommend me a series
+    - recommend me a sitcom
+    - what's some good series for English practice?
+
+#CC8
+- intent: chitchat/are_you_alive
+  examples: |
+    - are you alive?
+    - do you wish you were alive?
+    - are you alive?
+
+- intent: chitchat/ultimate_question
+  examples: |
+    - the ultimate question of life, the universe and everything?
+    - what's the meaning of life?
+    - what's the point of everything?
+    - how many roads must a man walk down?
+    - what's the meaning of universe and everything?
+    - what's the point of everything?
+
+
 
 #FAQ3
 - intent: faq/how_to_improve_english # TODO: turn into a set of stories
