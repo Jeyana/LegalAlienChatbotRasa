@@ -88,8 +88,6 @@ nlu:
     - is there a god?
     - do you believe in god?
 
-#CC4 How are you TODO
-
 #CC5
 - intent: chitchat/bot_purpose
   examples: |
@@ -143,7 +141,77 @@ nlu:
     - what's the meaning of universe and everything?
     - what's the point of everything?
 
+- intent: chitchat/goodbye
+  examples: |
+    - I'm off
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
 
+- intent: chitchat/books
+  examples: |
+    - recommend me a book
+    - do you like to read?
+    - do you read books?
+    - are you a book lover?
+    - what do you read?
+
+#CC4 How are you
+- intent: chitchat/how_are_you
+  examples: |
+    - how are you?
+    - how are you doing?
+    - what's up?
+    - how do you do?
+    - what's up with you?
+
+- intent: chitchat/mood_ok
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - super
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - good
+    - I'm good
+    - I'm ok
+    - I'm fine
+    - I'm happy
+    - very happy
+    - calm and happy
+    - relaxed
+
+- intent: chitchat/mood_sad
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so saad
+    - so sad
 
 #FAQ3
 - intent: faq/how_to_improve_english # TODO: turn into a set of stories
@@ -325,51 +393,8 @@ nlu:
 
 #WORKS, BUT NEEDS REVIEW
 
-#- intent: goodbye
-#  examples: |
-#    - good afternoon
-#    - cu
-#    - good by
-#    - cee you later
-#    - good night
-#    - bye
-#    - goodbye
-#    - have a nice day
-#    - see you around
-#    - bye bye
-#    - see you later
-#- intent: mood_great
-#  examples: |
-#    - perfect
-#    - great
-#    - amazing
-#    - feeling like a king
-#    - wonderful
-#    - I am feeling very good
-#    - I am great
-#    - I am amazing
-#    - I am going to save the world
-#    - super stoked
-#    - extremely good
-#    - so so perfect
-#    - so good
-#    - so perfect
-#- intent: mood_unhappy
-#  examples: |
-#    - my day was horrible
-#    - I am sad
-#    - I don't feel very well
-#    - I am disappointed
-#    - super sad
-#    - I'm so sad
-#    - sad
-#    - very sad
-#    - unhappy
-#    - not good
-#    - not very good
-#    - extremly sad
-#    - so saad
-#    - so sad
+
+
 
 
 

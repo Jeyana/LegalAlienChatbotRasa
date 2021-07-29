@@ -78,6 +78,19 @@ responses:
     - text: I am alive. In a way. I hope that doesn't scare you.
   utter_chitchat/ultimate_question:
     - text: "42"
+  utter_chitchat/goodbye:
+    - text: Bye!
+  utter_chitchat/books:
+    - text: I spend a lot of time reading. "Alice's Adventures in Wonderland" by Lewis Carroll is one of my favorites.
+    - text: I love classic science fiction, especially "Frankenstein" by Mary Shelley.
+
+#CC4 How are you
+  utter_chitchat/how_are_you:
+    - text: I'm good, thanks for asking! How are you?
+  utter_chitchat/mood_ok:
+    - text: I'm glad to hear that!
+  utter_chitchat/mood_sad:
+    - text: I'm sorry to hear this :( I'm here to talk with you anytime, although I don't guarantee that I'll make you happy.
 
   utter_faq/how_to_improve_english:
   - text: You can listen to the songs you like and learn them; watch movies with subtitles; take MOOCs you find interesting; read blogs, articles and books; write a diary in English; find new friends among native speakers and practice with them. What other fun ways can you think of?
