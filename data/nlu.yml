@@ -29,6 +29,16 @@ nlu:
     - I am [Erik](name)
     - I'm [Ursula](name)
     - Call me [Joe](name)
+    - I'm [Koen](name)
+    - It's [Violetta](name)
+    - Call me [Nazli](name)
+    - I'm [Jeyana](name)
+    - I am [Semra](name)
+    - [Earth](name)
+    - [Mathias](name)
+    - I'm [Matthijs](name)
+    - [Lewis](name)
+
 - intent: chitchat/ask_weather
   examples: |
     - What's the weather like today?

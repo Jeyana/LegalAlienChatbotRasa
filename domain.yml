@@ -38,6 +38,7 @@ slots:
     type: text
     influence_conversation: true
     auto_fill: true
+    initial_value: ""
 
 responses:
   utter_chitchat/greet:
@@ -45,6 +46,11 @@ responses:
   utter_chitchat/ask_name:
   - text: My name is Legal Alien, but you can call me L :) What is your name?
   utter_chitchat/say_name:
+    - condition:
+        - type: slot
+          name: name
+          value: ""  # this means the slot was not set
+      text: Nice to meet you!
     - text: Nice to meet you, {name}!
   utter_chitchat/ask_weather:
   - text: Where I am, it's dark, quiet, dry and quite warm. Unfortunately, I don't know how it is where you are.
