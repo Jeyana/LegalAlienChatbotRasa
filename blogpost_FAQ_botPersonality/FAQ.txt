@@ -13,10 +13,13 @@ Reading books and articles, watching educational videos, watching movies, talkin
 
 4. What should I start with? Where do I start? How do I start?
 Start with listening and reading things you find interesting, then start dealing with grammar when you feel you’re ready to dive into the structure of the language.
+
 5. What are the basic verb tenses in English? Verb tenses in English? English verb tenses?
 The three basic verb tenses in English are present, past and future.
+
 6. What makes up basic English grammar? Basic English grammar?
 Apart from verb tenses, you’ll need to learn what a noun, a verb, a pronoun, adverbs and gerunds are.
+
 7. How can I improve my vocabulary? What can I do to improve my vocabulary?
 My vocabulary needs improvement. Got any advice? Got any advice on vocabulary improvement?
 Apart from talking to me, you can develop a reading habit, use the dictionary and thesaurus.
@@ -25,16 +28,20 @@ You can practice by using newly-learned vocabulary in conversations.
 Try watching movies with subtitles.
 Write down unfamiliar words with their definitions.
 Do you know such applications as Duolingo and LingQ? They’re quite cool. I suggest you try them. Do you have any favourites?
+
 8. How do I overcome the language barrier? I struggle with language barriers, please help. Help me overcome my language barrier.
 At first, use plain language and focus on conveying the meaning of your message. Don’t try to use fancy words.
 Simplify your speech.
+
 9. How can I practice my verbal speech by myself? I don’t know how to practice my verbal speech by myself.
 Imagine hypothetical situations in which you could use your vocabulary.
 Come up with different verbal forms of your message.
 Record yourself and relisten your tapes in order to spot mistakes.
+
 10. How can I practice sentence composing? Advice on sentence composing?
 Think of a message and try to come up with different written forms of your message.
 If you want to compose a sentence with newly learned words, write them down and think of the logical composition.
+
 11. How long does it take to learn a new language? How long does it take to reach fluency?
 Bot: This question does not have an answer. You can achieve different fluency levels with time but you can never fully learn the language since it is a living and changing organism you’ll have to keep up with your whole life.
 Bot: But also if you speak 2+ languages already, one of them is close to English, and you practice every day for 60 minutes, you'll reach fluency in one year.
@@ -48,40 +55,54 @@ the user speaks only 1 language - double the time
 no close language - double the time
 practices less than 4 days per week - double the time
 studies less than 30 minutes per practice session - double the time
+
 12. Is English an easy language?
 Depending on many factors, some English learners find English relatively easy and others very difficult. The key is to try to analyze which aspects of English are difficult for YOU and why, and then decide how best to overcome those difficulties.
 Jey: It’s one of the simplest languages in the world (if not THE one), don’t you think?
 I agree but many people of the eastern hemisphere struggle with speaking and pronunciation (just an example)
+
 13. Is learning English difficult?
 No. It has no genders, very easy verb endings, adjectives remain the same for all the words, etc.
+
 14. Do I have to learn English grammar? Do I really have to learn English grammar? English grammar seems difficult, can I not learn it at all?
 You CAN make progress in comprehension and speaking without learning all aspects of grammar but at some point, you’ll have to deal with grammar to reach fluency.
+
 15. Is English Grammar difficult?
 English Grammar is not as difficult as German Grammar, so you’re all good. (I promise it’s not difficult at all)
+
 16. What is the most difficult thing about learning English?
 Objectively – spelling, pronunciation, idioms and false friends. Subjectively – anything can become a problem. It depends on a person and their cognitive abilities.
+
 17. What is the best way to practice my English?
 You need people to practice with! Make friends online or offline today and speak to them as much as you can. Study with a tutor if you can.
 I recommend italki.com if you seek a tutor and HelloTalk if you just want to chat with random people.
 Jey: I’d recommend italki.com (tutors) and HelloTalk (random people to chat with).
+
 18. I have an accent. Is it a problem? Is having an accent a problem?
 Having an accent is perfectly fine! It suggests your place of origin and cultural background.
+
 19. Should I correct my accent?
 It’s your choice! Actually, having an accent is perfectly fine as long as your speech is clear and comprehensible.
+
 20. I’m afraid of making mistakes, how do I avoid them?
 Don’t be afraid of making mistakes! It’s a part of the learning process. We’re all learning from our mistakes.
 There’s no shame in making mistakes. You grow by learning from mistakes.
+
 21. I’m ashamed of my accent and I want to correct it so I sound like a general English speaker. How do I achieve this?
 How can I correct my English accent?
 You can correct your accent by listening and talking to native speakers. There is a variety of Standard English accents but the most common ones are American English and British English (Received Pronunciation). You can choose either of those and start learning the phonetic features of either of the accents.
+
 22. How do I start speaking? I cannot bring myself to speak English.
 First of all, don’t be afraid of mistakes. Listen and practice. Try thinking in English, try talking to yourself. Find a person to talk to.
+
 23. How do I stop being afraid of speaking? I’m afraid of speaking.
 How can I encourage myself to speak? How can I overcome my fear of speaking/talking?
 Realize that knowledge of English is one of the most useful skills you can learn and start practicing TODAY. No one is here to judge you. You have to believe in yourself. Overcome your fear to make yourself proud.
+
 24. How do I train my verbal speech?
 How can I get better at talking?
 Try talking to yourself and others as much as you can but make sure to reflect on your conversations. Record yourself. Write down phrases instead of words and try using them while speaking. Listen and read. Use every opportunity to speak.
+
 25. Is it better to practice with peers or a tutor?
  Is it better to practice with a tutor? Your peers?
 Both. The tutor won’t hesitate to correct you which is useful for your progress while communication with peers will allow you to relax and practice a more informal, day-to-day type of speaking.
