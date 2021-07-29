@@ -195,6 +195,7 @@ nlu:
     - very happy
     - calm and happy
     - relaxed
+    - ok
 
 - intent: chitchat/mood_sad
   examples: |
@@ -337,7 +338,6 @@ nlu:
     - that sounds good
     - correct
     - sure
-    - ok
     - of course
     - you bet
     - I did

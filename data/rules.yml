@@ -10,6 +10,11 @@ rules:
   - intent: chitchat
   - action: utter_chitchat
 
+- rule: say hi at start
+  steps:
+    - intent: start
+    - action: utter_start
+
 #WORKS, BUT NEEDS REVIEW
 
 #- rule: Say goodbye anytime the user says goodbye

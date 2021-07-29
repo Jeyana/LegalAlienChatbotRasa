@@ -8,6 +8,7 @@ session_config:
 intents:
 - chitchat
 - faq
+- start
 #GENERAL
 - affirm
 - deny
@@ -17,18 +18,6 @@ intents:
 - describe_study_plan
 #FAQ3
 - ask_how_to_improve_english
-
-# # REVIEW
-#- greet
-#- ask_how_long_until_fluent
-#- goodbye
-#- affirm
-#- deny
-#- mood_great
-#- mood_unhappy
-#- bot_challenge
-#- ask_how_much_practice
-#- ask_how_to_improve_english
 
 entities:
   - name
@@ -42,7 +31,7 @@ slots:
 
 responses:
   utter_chitchat/greet:
-    - text: Hi! I'm an AI chatbot. You can practise English with me. I know a lot about language learning. Ask me anything!
+    - text: Hi! I'm LegalAlien. You can ask me about language learning!
   utter_chitchat/ask_name:
   - text: My name is Legal Alien, but you can call me L :) What is your name?
   utter_chitchat/say_name:
@@ -114,6 +103,9 @@ responses:
     - text: You can chat with human native speakers via HelloTalk app (it's free). You can also find a professional teacher or a community tutor on italki.com (not too expensive). Ask your friends and acquaintances whether they'd like to speak English with you! Look for international communities and hobby clubs in your area and online (they are usually English-speaking). And, of course, you can travel to an English-speaking country, you'll find plenty of opportunities to practise there!
   utter_faq/accent:
     - text: Having an accent is perfectly fine! Everyone speaks with a certain accent. When you're trying to get rid of your accent, you're just replacing it with another accent. It's important to work on pronunciation so that people understand you. But when they do understand, it's your choice whether to try and change your accent.
+
+  utter_start:
+    - text: Hi! I'm an AI chatbot. You can practise English with me. I know a lot about language learning. Ask me anything!
 
   utter_is_one_hour_five_days_realistic:
     - text: Is it realistic for you to practice five days a week, for one hour each day? Everything counts, including listening to songs and watching movies!
