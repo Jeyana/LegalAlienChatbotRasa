@@ -55,20 +55,3 @@ stories:
 #  - action: utter_did_that_help
 #  - intent: deny
 #  - action: utter_goodbye
-#
-#- story: ask_how_long_until_fluent
-#  steps:
-#    - intent: ask_how_long_until_fluent
-#    - action: utter_how_long_until_fluent
-#
-#- story: ask_how_much_practice
-#  steps:
-#    - intent: ask_how_much_practice
-#    - action: utter_how_much_practice
-#
-#- story: estimate_time_until_fluency_happy_path
-#  steps:
-#    - intent: ask_how_long_until_fluent
-#    - action: utter_how_long_until_fluent
-#    - intent: affirm
-#    - action: utter_todo

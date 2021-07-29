@@ -53,6 +53,17 @@ nlu:
     - are you a bot?
     - are you alive?
     - you're too smart
+
+#FAQ3
+- intent: faq/how_to_improve_english # TODO: turn into a set of stories
+  examples: |
+    - What daily activities can improve my language level?
+    - What can I do to improve my language level?
+    - Tips on language level improvement?
+    - Can you give me a piece of advice on how to improve my language level?
+    - how do I improve my English?
+    - how to learn to speak English better?
+
 #FAQ4
 - intent: faq/where_do_i_start
   examples: |
@@ -135,22 +146,6 @@ nlu:
 
 #WORKS, BUT NEEDS REVIEW
 
-#- intent: greet
-#  examples: |
-#    - hey
-#    - hello
-#    - hi
-#    - hello there
-#    - good morning
-#    - good evening
-#    - moin
-#    - hey there
-#    - let's go
-#    - hey dude
-#    - goodmorning
-#    - goodevening
-#    - good afternoon
-#    - hola
 #- intent: goodbye
 #  examples: |
 #    - good afternoon
@@ -196,12 +191,7 @@ nlu:
 #    - extremly sad
 #    - so saad
 #    - so sad
-#- intent: bot_challenge
-#  examples: |
-#    - are you a bot?
-#    - are you a human?
-#    - am I talking to a bot?
-#    - am I talking to a human?
+
 #- intent: ask_how_long_until_fluent
 #  examples: |
 #    - how long does it take to learn a language?
@@ -210,18 +200,5 @@ nlu:
 #    - when will i speak English well?
 #    - how long until i stop making mistakes?
 #    - when i fluent
-#- intent: ask_how_much_practice
-#  examples: |
-#    - how much should i practice?
-#    - for how long should i study?
-#    - how many hours should i study?
-#    - how often should i practice?
-#    - is five minutes of practice enough?
-- intent: ask_how_to_improve_english
-  examples: |
-    - What daily activities can improve my language level?
-    - What can I do to improve my language level?
-    - Tips on language level improvement?
-    - Can you give me a piece of advice on how to improve my language level?
-    - how do I improve my English?
-    - how to learn to speak English better?
+
+

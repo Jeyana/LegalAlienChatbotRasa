@@ -57,6 +57,8 @@ responses:
   utter_chitchat/are_you_human:
   - text: I'm not a human. I'm a set of machine learning algorithms. But I'm flattered by your doubts ;)
 
+  utter_faq/how_to_improve_english:
+  - text: You can listen to the songs you like and learn them; watch movies with subtitles; take MOOCs you find interesting; read blogs, articles and books; write a diary in English; find new friends among native speakers and practice with them. What other fun ways can you think of?
   utter_faq/where_do_i_start:
     - text: Start with reading and listening to things you find interesting. This way you'll grow your vocabulary. You can dive into grammar a bit later.
   utter_faq/tenses:
@@ -85,16 +87,8 @@ responses:
 #  - text: Great, carry on!
 #  utter_goodbye:
 #  - text: Bye
-#  utter_iamabot:
-#  - text: I am a bot, powered by Rasa.
 #  utter_how_long_until_fluent:
 #  - text: It depends. Do you want to get a rough estimate for your case?
-#  utter_how_much_practice:
-#  - text: One hour per day is great. But you need to find something that's realistic for you.
 #  utter_todo:
 #  - text: TODO
-  utter_ways_to_improve_english:
-  - text: You can listen to the songs you like and learn them; watch movies with subtitles; take MOOCs you find interesting; read blogs, articles and books; write a diary in English; find new friends among native speakers and practice with them. What other fun ways can you think of?
-
-
 
