@@ -89,6 +89,85 @@ nlu:
     - verb tenses in English?
     - which tenses do I need to know?
 
+#FAQ8
+- intent: faq/language_barrier
+  examples: |
+    - How do I overcome the language barrier?
+    - I struggle with language barriers, please help.
+    - Help me overcome my language barrier.
+    - I am afraid to start speaking.
+    - How do I start speaking?
+
+#FAQ9
+- intent: faq/practice_on_my_own
+  examples: |
+    - How can I practice my verbal speech by myself?
+    - I don’t know how to practice my verbal speech by myself.
+    - Can I practice by speaking to myself?
+    - Should I try to talk to myself?
+    - How can I practice speaking on my own?
+    - Is it weird if I talk to myself?
+    - How can I practice alone?
+
+#FAQ10
+- intent: faq/sentence_composing
+  examples: |
+    - How can I practice sentence composing?
+    - Advice on sentence composing?
+    - How do I construct sentences?
+    - How to put sentences together?
+    - How to put words together into a sentence?
+
+#FAQ11 TODO: turn into a form
+- intent: faq/how_long_until_fluent
+  examples: |
+    - how long does it take to learn a language?
+    - when will i be fluent?
+    - when will i speak fluently?
+    - when will i speak English well?
+    - how long until i stop making mistakes?
+    - when i fluent
+
+#FAQ12
+- intent: faq/is_english_easy
+  examples: |
+    - Is English an easy language?
+    - Is it easy to learn English?
+    - Is English difficult?
+    - Is learning English hard?
+    - Is English grammar difficult?
+
+#FAQ14
+- intent: faq/should_i_learn_grammar
+  examples: |
+    - Do I have to learn English grammar?
+    - Do I really have to learn English grammar?
+    - English grammar seems difficult, can I not learn it at all?
+    - can I do without grammar?
+    - can I learn vocabulary only?
+    - Do I need to know grammar?
+
+#FAQ17
+- intent: faq/find_people_to_practice_with
+  examples: |
+    - how do i find real people to practice with?
+    - where do i find real people to speak to?
+    - where do i find native speakers?
+    - with whom can I speak English?
+
+#FAQ18
+- intent: faq/accent
+  examples: |
+    - I have an accent. Is it a problem?
+    - Is having an accent a problem?
+    - should I get rid of my accent?
+    - can I get rid of my accent?
+    - how do I avoid my accent?
+    - is having an accent terrible?
+    - is my accent terrible?
+    - what if I have an accent?
+    - I’m ashamed of my accent
+
 # GENERAL
 - intent: affirm
   examples: |
@@ -130,6 +209,11 @@ nlu:
     - nevermind
     - I changed my mind
     - I want to do something else
+    - blah
+    - blah blah
+    - akjfdhviusenryfhiughg
+    - osgfdoibgfohbohs
+    - lsjgsnbsiosughjhjtogiu
 
 # FAQ2
 - intent: ask_how_much_practice
@@ -196,13 +280,6 @@ nlu:
 #    - so saad
 #    - so sad
 
-#- intent: ask_how_long_until_fluent
-#  examples: |
-#    - how long does it take to learn a language?
-#    - when will i be fluent?
-#    - when will i speak fluently?
-#    - when will i speak English well?
-#    - how long until i stop making mistakes?
-#    - when i fluent
+
 
 

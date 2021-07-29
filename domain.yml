@@ -62,7 +62,23 @@ responses:
   utter_faq/where_do_i_start:
     - text: Start with reading and listening to things you find interesting. This way you'll grow your vocabulary. You can dive into grammar a bit later.
   utter_faq/tenses:
-    - text: "There are only three main tenses: Past, Present and Future. In English, for each of them we need to specify an aspect: Simple, Progressive, Perfect or Perfect Progressive. You can already start speaking and be understood by other people if you know only Past Simple, Present Simple and Future Simple!"
+    - text: "There are only three main tenses: Past, Present and Future. In English, for each of them, we need to specify an aspect: Simple, Progressive, Perfect or Perfect Progressive. You can already start speaking and be understood by other people if you know only Past Simple, Present Simple and Future Simple!"
+  utter_faq/language_barrier:
+    - text: Use simple words and short sentences. When you're just starting, don't worry too much about grammar. Try to speak with someone you feel comfortable with. Remember that mistakes are part of the journey. You can do it!
+  utter_faq/practice_on_my_own:
+    - text: We all talk to ourselves all the time, how else would we think about things? Try to do it in a new language! It's ok if some words are still in your native language. You can also keep a diary, it is fun and super helpful, not only for language learning :)
+  utter_faq/sentence_composing:
+    - text: "First, think about the most important words in your sentence (you can write them down). Then put them in the right order: Subject (the person, place or thing) + Verb (the action or state of being) + Object (something influenced by the Verb). Finally, check if the tense is correct: you need to know at least Past Simple, Present Simple and Future Simple."
+  utter_faq/how_long_until_fluent:
+    - text: "It depends. If you practice every day for about an hour, and if you already know one of the languages close to English (Scots, Frisian or Dutch), you'll be fluent in about a year. If you practice less, it will take more time. Remember: you're only getting better at what you practice. If you don't practice speaking, you can reach a point where you can understand everything but still cannot say much."
+  utter_faq/is_english_easy:
+    - text: English one of the easiest languages in the world! English grammar is simple, especially if you ignore things that exist theoretically but are never used in practice (like Future Perfect Progressive). You don't have to remember the gender of the table (like with German) or have umlauts on your keyboard. It's important that you find out which aspects of English are difficult for YOU. Then you can deal with these difficulties one at a time. You understand me already, right? You'll be fine!
+  utter_faq/should_i_learn_grammar:
+    - text: You CAN make progress in comprehension and speaking without learning much grammar. But at some point, you’ll have to deal with grammar to reach fluency. You don't have to spend hours with boring textbooks, though. Spend 10 minutes learning grammar, and then go back to reading/watching things you find interesting. You'll notice the new concepts in action.
+  utter_faq/find_people_to_practice_with:
+    - text: You can chat with human native speakers via HelloTalk app (it's free). You can also find a professional teacher or a community tutor on italki.com (not too expensive). Ask your friends and acquaintances whether they'd like to speak English with you! Look for international communities and hobby clubs in your area and online (they are usually English-speaking). And, of course, you can travel to an English-speaking country, you'll find plenty of opportunities to practise there!
+  utter_faq/accent:
+    - text: Having an accent is perfectly fine! Everyone speaks with a certain accent. When you're trying to get rid of your accent, you're just replacing it with another accent. It's important to work on pronunciation so that people understand you. But when they do understand, it's your choice whether to try and change your accent.
 
   utter_is_one_hour_five_days_realistic:
     - text: Is it realistic for you to practice five days a week, for one hour each day? Everything counts, including listening to songs and watching movies!
@@ -73,7 +89,7 @@ responses:
   utter_good_plan:
     - text: Nice plan! Be patient, stick to what you've decided, and you'll reach fluency!
   utter_ok_ask_me_anything:
-    - text: Ok, looks like you don't want to answer. You can still ask me anything :)
+    - text: Ok, it looks like you don't want to answer. You can still ask me anything :)
 
   # #REVIEW
 #  utter_greet:

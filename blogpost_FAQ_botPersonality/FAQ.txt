@@ -61,19 +61,19 @@ Depending on many factors, some English learners find English relatively easy an
 Jey: It’s one of the simplest languages in the world (if not THE one), don’t you think?
 I agree but many people of the eastern hemisphere struggle with speaking and pronunciation (just an example)
 
-13. Is learning English difficult?
+13. (merge with 12) Is learning English difficult?
 No. It has no genders, very easy verb endings, adjectives remain the same for all the words, etc.
 
 14. Do I have to learn English grammar? Do I really have to learn English grammar? English grammar seems difficult, can I not learn it at all?
 You CAN make progress in comprehension and speaking without learning all aspects of grammar but at some point, you’ll have to deal with grammar to reach fluency.
 
-15. Is English Grammar difficult?
+15. (merge with 12) Is English Grammar difficult?
 English Grammar is not as difficult as German Grammar, so you’re all good. (I promise it’s not difficult at all)
 
 16. What is the most difficult thing about learning English?
 Objectively – spelling, pronunciation, idioms and false friends. Subjectively – anything can become a problem. It depends on a person and their cognitive abilities.
 
-17. What is the best way to practice my English?
+17. What is the best way to practice my English? (-> where do I find people to practice with)
 You need people to practice with! Make friends online or offline today and speak to them as much as you can. Study with a tutor if you can.
 I recommend italki.com if you seek a tutor and HelloTalk if you just want to chat with random people.
 Jey: I’d recommend italki.com (tutors) and HelloTalk (random people to chat with).
@@ -81,14 +81,14 @@ Jey: I’d recommend italki.com (tutors) and HelloTalk (random people to chat wi
 18. I have an accent. Is it a problem? Is having an accent a problem?
 Having an accent is perfectly fine! It suggests your place of origin and cultural background.
 
-19. Should I correct my accent?
+19. (merge with 18) Should I correct my accent?
 It’s your choice! Actually, having an accent is perfectly fine as long as your speech is clear and comprehensible.
 
 20. I’m afraid of making mistakes, how do I avoid them?
 Don’t be afraid of making mistakes! It’s a part of the learning process. We’re all learning from our mistakes.
 There’s no shame in making mistakes. You grow by learning from mistakes.
 
-21. I’m ashamed of my accent and I want to correct it so I sound like a general English speaker. How do I achieve this?
+21. (merge with 18) I’m ashamed of my accent and I want to correct it so I sound like a general English speaker. How do I achieve this?
 How can I correct my English accent?
 You can correct your accent by listening and talking to native speakers. There is a variety of Standard English accents but the most common ones are American English and British English (Received Pronunciation). You can choose either of those and start learning the phonetic features of either of the accents.
 
